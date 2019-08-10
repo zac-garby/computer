@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+LIBS:computer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 14
+Title "µ-Code Step Counter"
+Date "2019-08-10"
+Rev "1"
+Comp "Zac Garby"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS161 U43
+U 1 1 5D879057
+P 5350 3100
+F 0 "U43" H 5400 3850 50  0000 L CNN
+F 1 "74LS161" H 5400 3750 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 5350 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3300 4850 3200
+Connection ~ 4850 3100
+Connection ~ 4850 3200
+Wire Wire Line
+	4850 3200 4850 3100
+Wire Wire Line
+	4850 3400 4750 3400
+Text GLabel 4750 3400 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	5850 2900 6100 2900
+Wire Wire Line
+	6100 4500 4850 4500
+Wire Wire Line
+	4850 4500 4850 3600
+$Comp
+L power:+5V #PWR0165
+U 1 1 5D87E057
+P 5350 2300
+F 0 "#PWR0165" H 5350 2150 50  0001 C CNN
+F 1 "+5V" H 5365 2473 50  0000 C CNN
+F 2 "" H 5350 2300 50  0001 C CNN
+F 3 "" H 5350 2300 50  0001 C CNN
+	1    5350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5D87E206
+P 5350 3900
+F 0 "#PWR0166" H 5350 3650 50  0001 C CNN
+F 1 "GND" H 5355 3727 50  0000 C CNN
+F 2 "" H 5350 3900 50  0001 C CNN
+F 3 "" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5850 3100
+NoConn ~ 4850 2900
+NoConn ~ 4850 2800
+NoConn ~ 4850 2700
+NoConn ~ 4850 2600
+$Comp
+L 74xx:74LS04 U38
+U 3 1 5D87F802
+P 6100 3700
+F 0 "U38" V 6054 3880 50  0000 L CNN
+F 1 "74LS04" V 6145 3880 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6100 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6100 3700 50  0001 C CNN
+	3    6100 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2900 6100 3400
+Wire Wire Line
+	6100 4000 6100 4500
+Wire Wire Line
+	5850 2600 5950 2600
+Wire Wire Line
+	5850 2700 5950 2700
+Wire Wire Line
+	5850 2800 5950 2800
+Text HLabel 5950 2600 2    50   Output ~ 0
+ST0
+Text HLabel 5950 2700 2    50   Output ~ 0
+ST1
+Text HLabel 5950 2800 2    50   Output ~ 0
+ST2
+$Comp
+L power:+5V #PWR054
+U 1 1 5D87A088
+P 4850 3100
+F 0 "#PWR054" H 4850 2950 50  0001 C CNN
+F 1 "+5V" H 4700 3150 50  0000 C CNN
+F 2 "" H 4850 3100 50  0001 C CNN
+F 3 "" H 4850 3100 50  0001 C CNN
+	1    4850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D885ACC
+P 7350 3300
+AR Path="/5D885ACC" Ref="#PWR?"  Part="1" 
+AR Path="/5D820FD0/5D885ACC" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 7350 3150 50  0001 C CNN
+F 1 "+5V" H 7365 3473 50  0000 C CNN
+F 2 "" H 7350 3300 50  0001 C CNN
+F 3 "" H 7350 3300 50  0001 C CNN
+	1    7350 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D885AD2
+P 7350 3050
+AR Path="/5D885AD2" Ref="C?"  Part="1" 
+AR Path="/5D820FD0/5D885AD2" Ref="C31"  Part="1" 
+F 0 "C31" H 7465 3096 50  0000 L CNN
+F 1 "0.1µF" H 7465 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 7388 2900 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7350 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D885AD8
+P 7350 2800
+AR Path="/5D885AD8" Ref="#PWR?"  Part="1" 
+AR Path="/5D820FD0/5D885AD8" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 7350 2550 50  0001 C CNN
+F 1 "GND" H 7355 2627 50  0000 C CNN
+F 2 "" H 7350 2800 50  0001 C CNN
+F 3 "" H 7350 2800 50  0001 C CNN
+	1    7350 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 2800 7350 2900
+Wire Wire Line
+	7350 3200 7350 3300
+$EndSCHEMATC

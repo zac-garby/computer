@@ -1,0 +1,250 @@
+EESchema Schematic File Version 4
+LIBS:computer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 14
+Title "General Purpose Register"
+Date "2019-08-10"
+Rev "1"
+Comp "Zac Garby"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4000 3300 4550 3300
+Wire Wire Line
+	4550 3400 4000 3400
+Wire Wire Line
+	4000 3500 4550 3500
+Wire Wire Line
+	4550 3600 4000 3600
+Wire Wire Line
+	4000 3700 4550 3700
+Wire Wire Line
+	4550 3800 4000 3800
+Wire Wire Line
+	4000 3900 4550 3900
+Wire Wire Line
+	4550 4000 4000 4000
+Text HLabel 4000 3300 0    50   BiDi ~ 0
+D0
+Text HLabel 4000 3400 0    50   BiDi ~ 0
+D1
+Text HLabel 4000 3500 0    50   BiDi ~ 0
+D2
+Text HLabel 4000 3600 0    50   BiDi ~ 0
+D3
+Text HLabel 4000 3700 0    50   BiDi ~ 0
+D4
+Text HLabel 4000 3800 0    50   BiDi ~ 0
+D5
+Text HLabel 4000 3900 0    50   BiDi ~ 0
+D6
+Text HLabel 4000 4000 0    50   BiDi ~ 0
+D7
+$Comp
+L 74xx:74LS377 U6
+U 1 1 5D752770
+P 5050 3800
+AR Path="/5D483C2B/5D752770" Ref="U6"  Part="1" 
+AR Path="/5D48A331/5D752770" Ref="U8"  Part="1" 
+F 0 "U8" H 5050 4781 50  0000 C CNN
+F 1 "74LS377" H 5050 4690 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5050 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4200 4500 4200
+Wire Wire Line
+	4550 4300 4500 4300
+Text HLabel 4500 4350 0    50   Input ~ 0
+~IN
+$Comp
+L power:+5V #PWR08
+U 1 1 5D76C9FB
+P 5050 3000
+AR Path="/5D483C2B/5D76C9FB" Ref="#PWR08"  Part="1" 
+AR Path="/5D48A331/5D76C9FB" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 5050 2850 50  0001 C CNN
+F 1 "+5V" H 5065 3173 50  0000 C CNN
+F 2 "" H 5050 3000 50  0001 C CNN
+F 3 "" H 5050 3000 50  0001 C CNN
+	1    5050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5D76CB9E
+P 5050 4600
+AR Path="/5D483C2B/5D76CB9E" Ref="#PWR09"  Part="1" 
+AR Path="/5D48A331/5D76CB9E" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 5050 4350 50  0001 C CNN
+F 1 "GND" H 5055 4427 50  0000 C CNN
+F 2 "" H 5050 4600 50  0001 C CNN
+F 3 "" H 5050 4600 50  0001 C CNN
+	1    5050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U7
+U 1 1 5D76CDCE
+P 6150 3800
+AR Path="/5D483C2B/5D76CDCE" Ref="U7"  Part="1" 
+AR Path="/5D48A331/5D76CDCE" Ref="U9"  Part="1" 
+F 0 "U9" H 6150 4781 50  0000 C CNN
+F 1 "74LS245" H 6150 4690 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 6150 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6150 3800 50  0001 C CNN
+	1    6150 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3300 6650 3300
+Wire Wire Line
+	6650 3400 7200 3400
+Wire Wire Line
+	7200 3500 6650 3500
+Wire Wire Line
+	6650 3600 7200 3600
+Wire Wire Line
+	7200 3700 6650 3700
+Wire Wire Line
+	6650 3800 7200 3800
+Wire Wire Line
+	7200 3900 6650 3900
+Wire Wire Line
+	6650 4000 7200 4000
+Text HLabel 7200 3300 2    50   BiDi ~ 0
+D0
+Text HLabel 7200 3400 2    50   BiDi ~ 0
+D1
+Text HLabel 7200 3500 2    50   BiDi ~ 0
+D2
+Text HLabel 7200 3600 2    50   BiDi ~ 0
+D3
+Text HLabel 7200 3700 2    50   BiDi ~ 0
+D4
+Text HLabel 7200 3800 2    50   BiDi ~ 0
+D5
+Text HLabel 7200 3900 2    50   BiDi ~ 0
+D6
+Text HLabel 7200 4000 2    50   BiDi ~ 0
+D7
+$Comp
+L power:+5V #PWR011
+U 1 1 5D76E5F2
+P 6150 3000
+AR Path="/5D483C2B/5D76E5F2" Ref="#PWR011"  Part="1" 
+AR Path="/5D48A331/5D76E5F2" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 6150 2850 50  0001 C CNN
+F 1 "+5V" H 6165 3173 50  0000 C CNN
+F 2 "" H 6150 3000 50  0001 C CNN
+F 3 "" H 6150 3000 50  0001 C CNN
+	1    6150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5D76E773
+P 6150 4600
+AR Path="/5D483C2B/5D76E773" Ref="#PWR012"  Part="1" 
+AR Path="/5D48A331/5D76E773" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 6150 4350 50  0001 C CNN
+F 1 "GND" H 6155 4427 50  0000 C CNN
+F 2 "" H 6150 4600 50  0001 C CNN
+F 3 "" H 6150 4600 50  0001 C CNN
+	1    6150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4300 5650 4400
+Text HLabel 5650 4400 0    50   Input ~ 0
+~OUT
+Wire Wire Line
+	5550 3300 5650 3300
+Wire Wire Line
+	5550 3400 5650 3400
+Wire Wire Line
+	5550 3500 5650 3500
+Wire Wire Line
+	5550 3600 5650 3600
+Wire Wire Line
+	5550 3700 5650 3700
+Wire Wire Line
+	5550 3800 5650 3800
+Wire Wire Line
+	5550 3900 5650 3900
+Wire Wire Line
+	5550 4000 5650 4000
+Text GLabel 4500 4200 0    50   Input ~ 0
+~CLK
+Wire Wire Line
+	4500 4300 4500 4350
+$Comp
+L power:+5V #PWR?
+U 1 1 5D54D4BF
+P 8750 3350
+AR Path="/5D54D4BF" Ref="#PWR?"  Part="1" 
+AR Path="/5D483C2B/5D54D4BF" Ref="#PWR069"  Part="1" 
+AR Path="/5D48A331/5D54D4BF" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 8750 3200 50  0001 C CNN
+F 1 "+5V" H 8765 3523 50  0000 C CNN
+F 2 "" H 8750 3350 50  0001 C CNN
+F 3 "" H 8750 3350 50  0001 C CNN
+	1    8750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D54D4C5
+P 8750 3600
+AR Path="/5D54D4C5" Ref="C?"  Part="1" 
+AR Path="/5D483C2B/5D54D4C5" Ref="C2"  Part="1" 
+AR Path="/5D48A331/5D54D4C5" Ref="C3"  Part="1" 
+F 0 "C3" H 8865 3646 50  0000 L CNN
+F 1 "0.1µF" H 8865 3555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 8788 3450 50  0001 C CNN
+F 3 "~" H 8750 3600 50  0001 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D54D4CB
+P 8750 3850
+AR Path="/5D54D4CB" Ref="#PWR?"  Part="1" 
+AR Path="/5D483C2B/5D54D4CB" Ref="#PWR070"  Part="1" 
+AR Path="/5D48A331/5D54D4CB" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 8750 3600 50  0001 C CNN
+F 1 "GND" H 8755 3677 50  0000 C CNN
+F 2 "" H 8750 3850 50  0001 C CNN
+F 3 "" H 8750 3850 50  0001 C CNN
+	1    8750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3850 8750 3750
+Wire Wire Line
+	8750 3450 8750 3350
+Wire Wire Line
+	5650 4200 5550 4200
+$Comp
+L power:+5V #PWR0170
+U 1 1 5D8BE8CF
+P 5550 4200
+AR Path="/5D483C2B/5D8BE8CF" Ref="#PWR0170"  Part="1" 
+AR Path="/5D48A331/5D8BE8CF" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 5550 4050 50  0001 C CNN
+F 1 "+5V" V 5650 4200 50  0000 L CNN
+F 2 "" H 5550 4200 50  0001 C CNN
+F 3 "" H 5550 4200 50  0001 C CNN
+	1    5550 4200
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
