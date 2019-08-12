@@ -897,4 +897,6 @@ Wire Wire Line
 	4000 4900 4000 4800
 Wire Wire Line
 	4000 4500 4000 4400
+Text Notes 4150 1100 0    118  ~ 24
+WRONG! This needs fixing. ~REG_ENB~ isn’t the same for both registers.
 $EndSCHEMATC

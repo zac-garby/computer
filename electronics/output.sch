@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 14 14
-Title ""
+Title "Output Module"
 Date "2019-08-10"
 Rev "1"
 Comp "Zac Garby"
