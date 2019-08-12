@@ -48,7 +48,7 @@ like so:
 
 More control signals will be added when they're needed, but hopefully no more than 32 will be necessary.
 
-Additionally, every instruction's first three clock cycles are consumed by fetching and decoding the
+Additionally, every instruction's first four clock cycles are consumed by fetching and decoding the
 opcode and operand. In memory, if the program counter is pointing at an opcode, the next memory location
 will always be its argument (even if that particular instruction doesn't use its argument). This might
 be something to look at changing in the future though.
@@ -87,10 +87,11 @@ ARG_OUT = 21
 ARG_IN = 22
 OUTPUT = 23
 
-# the three control words used to fetch and decode the instruction currently pointed to by PC.
+# the four control words used to fetch and decode the instruction currently pointed to by PC.
 FETCH = [
     { RAM_OUT, PC_OUT, OP_IN },
-    { RAM_OUT, COUNT, PC_OUT, ARG_IN },
+    { COUNT },
+    { RAM_OUT, PC_OUT, ARG_IN },
     { COUNT },
 ]
 
