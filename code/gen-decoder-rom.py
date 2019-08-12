@@ -135,6 +135,8 @@ def generate_rom():
             
             addr = base_address | i
             
+            # write the same control word for each combination of flags
+            # (this will be changed in the future btw)
             for flags in range(0b11):
                 rom[addr | (flags << 3)] = word
     
