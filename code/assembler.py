@@ -59,6 +59,9 @@ INSTRUCTIONS = [
     "SUBA",
     "SUBB",
     "PAGE",
+    "JMP",
+    "JZ",
+    "JC"
 ]
 
 def parse_numeric(str):
