@@ -156,7 +156,31 @@ INSTRUCTIONS = [
     [ # 16  ADDR x
         { LATCH_ACC, ADDR_IN, ARG_OUT },
         { RAM_OUT, MAR_TO_ADRB, SUM_TO_ACC, FLAG_IN },
-    ]
+    ],
+    [ # 17  ADDA
+        { LATCH_ACC },
+        { A_OUT, SUM_TO_ACC, FLAG_IN },
+    ],
+    [ # 18  ADDB
+        { LATCH_ACC },
+        { B_OUT, SUM_TO_ACC, FLAG_IN },
+    ],
+    [ # 19  BREFST
+        { B_OUT, ADDR_IN },
+        { RAM_IN, MAR_TO_ADRB, ACC_OUT },
+    ],
+    [ # 20 SUBR x
+        { LATCH_ACC, ADDR_IN, ARG_OUT },
+        { RAM_OUT, MAR_TO_ADRB, SUM_TO_ACC, FLAG_IN, SUB },
+    ],
+    [ # 21  SUBA
+        { LATCH_ACC },
+        { A_OUT, SUM_TO_ACC, FLAG_IN, SUB },
+    ],
+    [ # 22  SUBB
+        { LATCH_ACC },
+        { B_OUT, SUM_TO_ACC, FLAG_IN, SUB },
+    ],
 ]
 
 def generate_rom():
