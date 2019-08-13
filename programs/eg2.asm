@@ -1,0 +1,12 @@
+	LDA	0xfe
+	ADDR	0xff
+	OUT
+	ADDR	0xff
+	OUT
+	ADDR	0xff
+	OUT
+	HALT
+
+0xfe	DATA	0
+0xff	DATA	10
+

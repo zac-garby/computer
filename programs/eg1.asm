@@ -1,0 +1,10 @@
+	LDA	64
+	OUT
+	STA	65
+	LDA	128
+	OUT
+	LDA	65
+	OUT
+	HALT
+
+64	DATA	1
