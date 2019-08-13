@@ -87,6 +87,9 @@ ARG_OUT = 21
 ARG_IN = 22
 OUTPUT = 23
 
+Z = 0b10
+C = 0b01
+
 # the four control words used to fetch and decode the instruction currently pointed to by PC.
 FETCH = [
     { RAM_OUT, PC_OUT, OP_IN },
@@ -182,8 +185,32 @@ INSTRUCTIONS = [
         { B_OUT, SUM_TO_ACC, FLAG_IN, SUB },
     ],
     [ # 23  PAGE x
-        { PAGE_IN, ARG_OUT }
-    ]
+        { PAGE_IN, ARG_OUT },
+    ],
+    [ # 24  JMP x
+        { ADDR_IN, ARG_OUT },
+        { JUMP, MAR_TO_ADRB },
+    ],
+    { # 25  JZ x
+        Z: [
+            { ADDR_IN, ARG_OUT },
+            { JUMP, MAR_TO_ADRB },
+        ],
+        Z | C: [
+            { ADDR_IN, ARG_OUT },
+            { JUMP, MAR_TO_ADRB },
+        ],
+    },
+    { # 26  JC x
+        C: [
+            { ADDR_IN, ARG_OUT },
+            { JUMP, MAR_TO_ADRB },
+        ],
+        Z | C: [
+            { ADDR_IN, ARG_OUT },
+            { JUMP, MAR_TO_ADRB },
+        ],
+    }
 ]
 
 def generate_rom():
@@ -191,29 +218,35 @@ def generate_rom():
     rom = [ 0 for i in range(2 ** 13) ]
     
     for (opcode, instr) in enumerate(INSTRUCTIONS):
-        # add the fetch steps before the instruction
-        steps = FETCH + instr
-        
-        # pad with empty control words up to a length of 8
-        for i in range(8 - len(steps)):
-            steps.append({})
-        
-        base_address = opcode << 5
-        
-        for (i, signals) in enumerate(steps):
-            # construct the control word
-            word = 0
-            for sig in signals:
-                word |= 1 << sig
-            
-            addr = base_address | i
-            
-            # write the same control word for each combination of flags
-            # (this will be changed in the future btw)
-            for flags in range(0b11):
-                rom[addr | (flags << 3)] = word
+        for flags in range(4):
+            if type(instr) == list:
+                put_instr(opcode, instr, flags, rom)
+            elif flags in instr:
+                put_instr(opcode, instr[flags], flags, rom)
+            else:
+                put_instr(opcode, [], flags, rom)
     
     return rom
+
+def put_instr(opcode, steps, flags, rom):
+    # add the fetch steps before the instruction
+    steps = FETCH + steps
+
+    # pad with empty control words up to a length of 8
+    for i in range(8 - len(steps)):
+        steps.append({})
+
+    base_address = opcode << 5
+
+    for (i, signals) in enumerate(steps):
+        # construct the control word
+        word = 0
+        for sig in signals:
+            word |= 1 << sig
+
+        addr = base_address | i
+
+        rom[addr | (flags << 3)] = word
 
 def output_rom(rom):
     print("v2.0 raw")
