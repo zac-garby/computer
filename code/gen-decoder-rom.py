@@ -181,6 +181,9 @@ INSTRUCTIONS = [
         { LATCH_ACC },
         { B_OUT, SUM_TO_ACC, FLAG_IN, SUB },
     ],
+    [ # 23  PAGE x
+        { PAGE_IN, ARG_OUT }
+    ]
 ]
 
 def generate_rom():
