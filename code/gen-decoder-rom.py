@@ -110,6 +110,52 @@ INSTRUCTIONS = [
     ],
     [ # 3   OUT
         { ACC_OUT, OUTPUT },
+    ],
+    [ # 4   NO-OP
+    ],
+    [ # 5   MEMREFLD x
+        { ADDR_IN, ARG_OUT },
+        { RAM_OUT, MAR_TO_ADRB, ADDR_IN },
+        { RAM_OUT, MAR_TO_ADRB, ACC_IN },
+    ],
+    [ # 6   A->B
+        { A_OUT, B_IN },
+    ],
+    [ # 7   A->ACC
+        { A_OUT, ACC_IN },
+    ],
+    [ # 8   AREFLD
+        { A_OUT, ADDR_IN },
+        { RAM_OUT, MAR_TO_ADRB, ACC_IN },
+    ],
+    [ # 9   B->A
+        { B_OUT, A_IN },
+    ],
+    [ # 10  BREFLD
+        { B_OUT, ADDR_IN },
+        { RAM_OUT, MAR_TO_ADRB, ACC_IN },
+    ],
+    [ # 11  B->ACC
+        { B_OUT, ACC_IN },
+    ],
+    [ # 12  MEMREFST x
+        { ADDR_IN, ARG_OUT },
+        { RAM_OUT, MAR_TO_ADRB, ADDR_IN },
+        { RAM_IN, MAR_TO_ADRB, ACC_OUT },
+    ],
+    [ # 13  ACC->A
+        { ACC_OUT, A_IN },
+    ],
+    [ # 14  ACC->B
+        { ACC_OUT, B_IN },
+    ],
+    [ # 15  AREFST
+        { A_OUT, ADDR_IN },
+        { RAM_IN, MAR_TO_ADRB, ACC_OUT },
+    ],
+    [ # 16  ADDR x
+        { LATCH_ACC, ADDR_IN, ARG_OUT },
+        { RAM_OUT, MAR_TO_ADRB, SUM_TO_ACC, FLAG_IN },
     ]
 ]
 
