@@ -111,7 +111,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
-    <a name="simrand" val="0"/>
+    <a name="simrand" val="32"/>
   </options>
   <mappings>
     <tool lib="6" map="Button2" name="Menu Tool"/>
