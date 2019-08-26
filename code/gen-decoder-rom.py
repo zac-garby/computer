@@ -214,7 +214,15 @@ INSTRUCTIONS = [
             { ADDR_IN, ARG_OUT },
             { JUMP, MAR_TO_ADRB },
         ],
-    }
+    },
+    [ # 27  PUSH
+        { SPTR_DECR },
+        { SPTR_OUT, RAM_IN, ACC_OUT },
+    ],
+    [ # 28  POP
+        { SPTR_OUT, RAM_OUT, ACC_IN },
+        { SPTR_INCR },
+    ]
 ]
 
 def generate_rom():

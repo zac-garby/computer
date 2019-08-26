@@ -61,7 +61,9 @@ INSTRUCTIONS = [
     "PAGE",
     "JMP",
     "JZ",
-    "JC"
+    "JC",
+    "PUSH",
+    "POP"
 ]
 
 def parse_numeric(str):
