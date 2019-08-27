@@ -9,44 +9,16 @@ and 32-bit output.
 
 The address is arranged, with the most significant bit on the left, like so:
 
-OPCODE           Z C  STEP
-x x x x x x x x  x x  x x x
+OPCODE         Z C  STEP
+x x x x x x x  x x  x x x x
 
-OPCODE is an 8-bit value, with the LSB on the left, representing the current instruction's
+OPCODE is a 7-bit value, with the LSB on the left, representing the current instruction's
 opcode. The opcode tells the CPU what should be done for the instruction, for example
-00000001 corresponds to the LDA instruction. Z and C and the zero and carry flags,
-respectively. STEP is the current microcode step, ranging from 0 to 7.
+0000001 corresponds to the LDA instruction. Z and C and the zero and carry flags,
+respectively. STEP is the current microcode step, ranging from 0 to 15.
 
 The EEPROM output feeds into the CPU's control word which allows the decoder to maniupulate
-and control each module in the computer. The bits are arranged, from least signficant to most,
-like so:
-
-0   A register -> data bus
-    data bus -> A register
-    B register -> data bus
-    data bus -> B register
-4   RAM -> data bus
-    data bus -> RAM
-    data bus -> page register
-    data bus -> addr register
-8   memory address register -> address bus
-    address bus -> memory address register
-    subtract or add? 1 = subtract, 0 = add
-    accumulator = accumulator (+ / -) data bus
-12  accumulator -> ALU latch register
-    load flags into flag register
-    accumulator -> data bus
-    data bus -> accumulator
-16  jump (address bus -> program counter)
-    count (increment program counter)
-    program counter -> address bus
-    halt
-20  data bus -> opcode register
-    operand/argument register -> data bus
-    data bus -> operand/argument register
-    data bus -> output register
-
-More control signals will be added when they're needed, but hopefully no more than 32 will be necessary.
+and control each module in the computer.
 
 Additionally, every instruction's first four clock cycles are consumed by fetching and decoding the
 opcode and operand. In memory, if the program counter is pointing at an opcode, the next memory location
@@ -244,11 +216,11 @@ def put_instr(opcode, steps, flags, rom):
     # add the fetch steps before the instruction
     steps = FETCH + steps
 
-    # pad with empty control words up to a length of 8
-    for i in range(8 - len(steps)):
+    # pad with empty control words up to a length of 16
+    for i in range(16 - len(steps)):
         steps.append({})
 
-    base_address = opcode << 5
+    base_address = opcode << 6
 
     for (i, signals) in enumerate(steps):
         # construct the control word
@@ -258,7 +230,7 @@ def put_instr(opcode, steps, flags, rom):
 
         addr = base_address | i
 
-        rom[addr | (flags << 3)] = word
+        rom[addr | (flags << 4)] = word
 
 def output_rom(rom):
     print("v2.0 raw")
