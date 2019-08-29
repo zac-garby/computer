@@ -62,6 +62,8 @@ SPTR_IN = 24
 SPTR_INCR = 25
 SPTR_DECR = 26
 SPTR_OUT = 27
+PC_ADDR_OUT = 28
+PC_PAGE_OUT = 29
 
 Z = 0b10
 C = 0b01
@@ -194,6 +196,21 @@ INSTRUCTIONS = [
     [ # 28  POP
         { SPTR_OUT, RAM_OUT, ACC_IN },
         { SPTR_INCR },
+    ],
+    [ # 29  CALL x
+        { SPTR_DECR },
+        { SPTR_OUT, RAM_IN, PC_ADDR_OUT },
+        { SPTR_DECR },
+        { SPTR_OUT, RAM_IN, PC_PAGE_OUT },
+        { ADDR_IN, ARG_OUT },
+        { JUMP, MAR_TO_ADRB },
+    ],
+    [ # 30  RETURN
+        { SPTR_OUT, RAM_OUT, PAGE_IN },
+        { SPTR_INCR },
+        { SPTR_OUT, RAM_OUT, ADDR_IN },
+        { SPTR_INCR },
+        { JUMP, MAR_TO_ADRB }
     ]
 ]
 

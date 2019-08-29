@@ -63,7 +63,9 @@ INSTRUCTIONS = [
     "JZ",
     "JC",
     "PUSH",
-    "POP"
+    "POP",
+    "CALL",
+    "RETURN"
 ]
 
 def parse_numeric(str):
