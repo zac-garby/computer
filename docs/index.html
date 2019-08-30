@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+	  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="styles.css">
+
+	  	<title>8-bit Computer</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div>
+				<h1>8-bit Computer</h1>
+				
+				<a href="#instructions">Instruction Set</a> <br>
+				<a href="#assembly">Assembly, Machine Code</a>
+				
+				<br><br>
+				
+				<a href="https://github.com/zac-garby/computer">GitHub</a>
+			</div>
+			
+			<div>
+				<h2 id="instructions">Instruction Set</h2>
+				<p>
+					This table shows every instruction available to programs on the computer, as well as a small description of their functionalities. An "x" in third row indicates that the instruction uses an argument.
+				</p>
+			
+				<p>
+					RAM[x] denotes the value at memory location x. A and B correspond to the values of the A and B registers, and ACC stands for the accumulator register.
+				</p>
+						
+				<table id="instructions">
+					<tr>
+						<td class="denary">0</td>
+						<td class="binary">0000 0000</td>
+						<td class="mnemonic">HALT</td>
+						<td class="arg"></td>
+						<td class="desc">Stop the program from running.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0001</td>
+						<td class="mnemonic">LDA</td>
+						<td class="arg">x</td>
+						<td class="desc">Load RAM[x] into ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0010</td>
+						<td class="mnemonic">STA</td>
+						<td class="arg">x</td>
+						<td class="desc">Store ACC in RAM[x].</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0011</td>
+						<td class="mnemonic">OUT</td>
+						<td class="arg"></td>
+						<td class="desc">Show ACC on the output display.</td>
+					</tr>
+					<tr>
+						<td class="denary">4</td>
+						<td class="binary">0000 0100</td>
+						<td class="mnemonic">NO-OP</td>
+						<td class="arg"></td>
+						<td class="desc">Do absolutely nothing.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0101</td>
+						<td class="mnemonic">MEMREFLD</td>
+						<td class="arg">x</td>
+						<td class="desc">Load RAM[RAM[x]] into ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0110</td>
+						<td class="mnemonic">A->B</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of A to B.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 0111</td>
+						<td class="mnemonic">A->ACC</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of A to ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary">8</td>
+						<td class="binary">0000 1000</td>
+						<td class="mnemonic">AREFLD</td>
+						<td class="arg"></td>
+						<td class="desc">Load RAM[A] into ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1001</td>
+						<td class="mnemonic">B->A</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of B to A.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1010</td>
+						<td class="mnemonic">BREFLD</td>
+						<td class="arg"></td>
+						<td class="desc">Load RAM[B] into ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1011</td>
+						<td class="mnemonic">B->ACC</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of B to ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary">12</td>
+						<td class="binary">0000 1100</td>
+						<td class="mnemonic">MEMREFST</td>
+						<td class="arg">x</td>
+						<td class="desc">Store ACC in RAM[RAM[x]].</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1101</td>
+						<td class="mnemonic">ACC->A</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of ACC to A.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1110</td>
+						<td class="mnemonic">ACC->B</td>
+						<td class="arg"></td>
+						<td class="desc">Copy the value of ACC to B.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0000 1111</td>
+						<td class="mnemonic">AREFST</td>
+						<td class="arg"></td>
+						<td class="desc">Store ACC in RAM[A].</td>
+					</tr>
+					<tr>
+						<td class="denary">16</td>
+						<td class="binary">0001 0000</td>
+						<td class="mnemonic">ADDR</td>
+						<td class="arg">x</td>
+						<td class="desc">Add RAM[x] to ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0001</td>
+						<td class="mnemonic">ADDA</td>
+						<td class="arg"></td>
+						<td class="desc">Add A to ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0010</td>
+						<td class="mnemonic">ADDB</td>
+						<td class="arg"></td>
+						<td class="desc">Add B to ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0011</td>
+						<td class="mnemonic">BREFST</td>
+						<td class="arg"></td>
+						<td class="desc">Store ACC in RAM[B].</td>
+					</tr>
+					<tr>
+						<td class="denary">20</td>
+						<td class="binary">0001 0100</td>
+						<td class="mnemonic">SUBR</td>
+						<td class="arg">x</td>
+						<td class="desc">Subtract RAM[x] from ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0101</td>
+						<td class="mnemonic">SUBA</td>
+						<td class="arg"></td>
+						<td class="desc">Subtract A from ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0110</td>
+						<td class="mnemonic">SUBB</td>
+						<td class="arg"></td>
+						<td class="desc">Subtract B from ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 0111</td>
+						<td class="mnemonic">PAGE</td>
+						<td class="arg">x</td>
+						<td class="desc">Switch the active page to x.</td>
+					</tr>
+					<tr>
+						<td class="denary">24</td>
+						<td class="binary">0001 1000</td>
+						<td class="mnemonic">JMP</td>
+						<td class="arg">x</td>
+						<td class="desc">Jump to address x.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 1001</td>
+						<td class="mnemonic">JZ</td>
+						<td class="arg">x</td>
+						<td class="desc">Jump to address x if ZERO is set.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 1010</td>
+						<td class="mnemonic">JC</td>
+						<td class="arg">x</td>
+						<td class="desc">Jump to address x if CARRY is set.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 1011</td>
+						<td class="mnemonic">PUSH</td>
+						<td class="arg"></td>
+						<td class="desc">Push ACC to the top of the stack.</td>
+					</tr>
+					<tr>
+						<td class="denary">28</td>
+						<td class="binary">0001 1100</td>
+						<td class="mnemonic">POP</td>
+						<td class="arg"></td>
+						<td class="desc">Pop the top of the stack into ACC.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 1101</td>
+						<td class="mnemonic">CALL x</td>
+						<td class="arg"></td>
+						<td class="desc">Call the function at address x.</td>
+					</tr>
+					<tr>
+						<td class="denary"></td>
+						<td class="binary">0001 1110</td>
+						<td class="mnemonic">RETURN</td>
+						<td class="arg"></td>
+						<td class="desc">Return from the current function.</td>
+					</tr>
+				</table>
+				
+				<h2 id="assembly">Assembly and Machine Code</h2>
+				<p>
+					Programs are either written in assembly language or machine code. The machine code, when placed in RAM, begins execution at memory address 0. Then, every instruction takes up two bytes: one for the opcode and one for the argument. If no argument is required for a particular instruction, anything can be used, but 0 is common.
+				</p>
+				<p>
+					Assembly also uses a very simple format. A typical assembly program might look like this:
+				</p>
+				<pre><code>	<span class="instruction">LDA</span>	50	<span class="comment">Push two numbers, 1 and 2, to the stack.</span>
+	<span class="instruction">PUSH</span>
+	<span class="instruction">LDA</span>	51
+	<span class="instruction">PUSH</span>
+	<span class="instruction">LDA</span>	52	<span class="comment">Clear the accumulator.</span>
+	<span class="instruction">POP</span>	0	<span class="comment">Then, pop and output the two numbers.</span>
+	<span class="instruction">OUT</span>	0	<span class="comment">They should be displayed in reverse order.</span>
+	<span class="instruction">POP</span>
+	<span class="instruction">OUT</span>
+	<span class="instruction">HALT</span>
+	
+50	<span class="instruction">DATA</span>	1
+51	<span class="instruction">DATA</span>	2
+52	<span class="instruction">DATA</span>	0</code></pre>
+
+				<p>The first column is the address of the instruction or data. The second column is the mnemonic of the instruction to execute. The third column is the argument to that instruction. And, any text after the third column is considered a comment and ignored. Additionally, the first and third
+			</div>
+		</div>
+	</body>
+</html>

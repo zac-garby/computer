@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #161616;
+    font-family: sans-serif;
+    color: #D4D4D4;
+}
+
+a {
+    color: #E6E6E6;
+}
+
+div.wrapper {
+    padding-top: 70px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 850px;
+    
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+
+h1 {
+    font-size: 28pt;
+}
+
+table#instructions {
+    width: 550px;
+}
+
+table#instructions td.denary {
+    color: #4a4a4a;
+    width: 30px;
+    padding-right: 5px;
+    text-align: right;
+}
+
+table#instructions td.binary {
+    color: #595959;
+    width: 100px;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+table#instructions td.mnemonic {
+    color: #8b8b8b;
+    width: 110px;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+table#instructions td.arg {
+    color: #8b8b8b;
+    width: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+table#instructions td.desc {
+    color: #606060;
+    text-align: right;
+}
+
+table#instructions tr:nth-child(4n+1) td.denary {
+    color: #4a4a4a;
+}
+
+table#instructions tr:nth-child(4n+1) td.binary {
+    color: #787878;
+}
+
+table#instructions tr:nth-child(4n+1) td.mnemonic,
+table#instructions tr:nth-child(4n+1) td.arg {
+    color: #aaa;
+}
+
+table#instructions tr:nth-child(4n+1) td.desc {
+    color: #7f7f7f;
+}
+
+p {
+    color: #949494;
+    line-height: 1.3em;
+}
+
+pre {
+    font-size: 1.15em;
+    color: #b9b9b9;
+}
+
+span.instruction {
+    font-weight: bold;
+}
+
+span.comment {
+    color: #797979;
+}
