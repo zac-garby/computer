@@ -4,899 +4,518 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 14
-Title "Memory Address Register"
-Date "2019-08-10"
-Rev "1"
-Comp "Zac Garby"
+Sheet 2 14
+Title ""
+Date ""
+Rev ""
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 74xx:74LS377 PAGE1
-U 1 1 5D4B7D70
-P 8650 2550
-F 0 "PAGE1" H 8700 3300 50  0000 L CNN
-F 1 "74LS377" H 8700 3200 50  0000 L CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 8650 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 8650 2550 50  0001 C CNN
-	1    8650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR039
-U 1 1 5D4BA334
-P 8650 1750
-F 0 "#PWR039" H 8650 1600 50  0001 C CNN
-F 1 "+5V" H 8665 1923 50  0000 C CNN
-F 2 "" H 8650 1750 50  0001 C CNN
-F 3 "" H 8650 1750 50  0001 C CNN
-	1    8650 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR040
-U 1 1 5D4BA78B
-P 8650 3350
-F 0 "#PWR040" H 8650 3100 50  0001 C CNN
-F 1 "GND" H 8655 3177 50  0000 C CNN
-F 2 "" H 8650 3350 50  0001 C CNN
-F 3 "" H 8650 3350 50  0001 C CNN
-	1    8650 3350
-	1    0    0    -1  
-$EndComp
-Text HLabel 6250 3250 0    50   Input ~ 0
-~ADDR_IN
-Wire Wire Line
-	8150 2950 8050 2950
-Wire Wire Line
-	6250 3250 6350 3250
-$Comp
-L 74xx:74LS157 U17
-U 1 1 5D4D5D0B
-P 6850 2650
-F 0 "U17" H 6900 3500 50  0000 L CNN
-F 1 "74LS157" H 6900 3400 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6850 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6850 2650 50  0001 C CNN
-	1    6850 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR035
-U 1 1 5D4DE1ED
-P 6850 1750
-F 0 "#PWR035" H 6850 1600 50  0001 C CNN
-F 1 "+5V" H 6865 1923 50  0000 C CNN
-F 2 "" H 6850 1750 50  0001 C CNN
-F 3 "" H 6850 1750 50  0001 C CNN
-	1    6850 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 5D4DE352
-P 6850 3650
-F 0 "#PWR036" H 6850 3400 50  0001 C CNN
-F 1 "GND" H 6855 3477 50  0000 C CNN
-F 2 "" H 6850 3650 50  0001 C CNN
-F 3 "" H 6850 3650 50  0001 C CNN
-	1    6850 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR033
-U 1 1 5D4DE5AB
-P 6350 3350
-F 0 "#PWR033" H 6350 3100 50  0001 C CNN
-F 1 "GND" H 6355 3177 50  0000 C CNN
-F 2 "" H 6350 3350 50  0001 C CNN
-F 3 "" H 6350 3350 50  0001 C CNN
-	1    6350 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 2050 6250 2050
-Wire Wire Line
-	6350 2350 6250 2350
-Wire Wire Line
-	6350 2650 6250 2650
-Wire Wire Line
-	6350 2950 6250 2950
-Text HLabel 6250 2050 0    50   Input ~ 0
-D0
-Text HLabel 6250 2350 0    50   Input ~ 0
-D1
-Text HLabel 6250 2650 0    50   Input ~ 0
-D2
-Text HLabel 6250 2950 0    50   Input ~ 0
-D3
-Wire Wire Line
-	7350 2350 7350 2150
-Wire Wire Line
-	7350 2650 7400 2650
-Wire Wire Line
-	7400 2650 7400 2250
-Wire Wire Line
-	7350 2950 7450 2950
-Wire Wire Line
-	7450 2950 7450 2350
-Text HLabel 6250 2150 0    50   Input ~ 0
-A8
-Text HLabel 6250 2450 0    50   Input ~ 0
-A9
-Text HLabel 6250 2750 0    50   Input ~ 0
-A10
-Text HLabel 6250 3050 0    50   Input ~ 0
-A11
-Wire Wire Line
-	6250 2150 6350 2150
-Wire Wire Line
-	6350 2450 6250 2450
-Wire Wire Line
-	6250 2750 6350 2750
-Wire Wire Line
-	6350 3050 6250 3050
-$Comp
-L 74xx:74LS08 U15
-U 1 1 5D4E3F8E
-P 2300 1100
-F 0 "U15" H 2300 1425 50  0000 C CNN
-F 1 "74LS08" H 2300 1334 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2300 1100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2300 1100 50  0001 C CNN
-	1    2300 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 1000 1900 1000
-Text HLabel 1900 1000 0    50   Input ~ 0
-~PAGE_IN
-Text HLabel 1900 1200 0    50   Input ~ 0
-~FROM_ADRB
-Wire Wire Line
-	2600 1100 3200 1100
-Text Label 3200 1100 2    50   ~ 0
-~REG_ENB
-Text Label 7750 3250 0    50   ~ 0
-~REG_ENB
-Wire Wire Line
-	8150 3050 8100 3050
-Wire Wire Line
-	8100 3050 8100 3250
-Wire Wire Line
-	8100 3250 7750 3250
-Text HLabel 6250 5650 0    50   Input ~ 0
-~ADDR_IN
-Wire Wire Line
-	6250 5650 6350 5650
-$Comp
-L 74xx:74LS157 U18
-U 1 1 5D4F5655
-P 6850 5050
-F 0 "U18" H 6900 5900 50  0000 L CNN
-F 1 "74LS157" H 6900 5800 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6850 5050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6850 5050 50  0001 C CNN
-	1    6850 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR037
-U 1 1 5D4F565B
-P 6850 4150
-F 0 "#PWR037" H 6850 4000 50  0001 C CNN
-F 1 "+5V" H 6865 4323 50  0000 C CNN
-F 2 "" H 6850 4150 50  0001 C CNN
-F 3 "" H 6850 4150 50  0001 C CNN
-	1    6850 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR034
-U 1 1 5D4F5667
-P 6350 5750
-F 0 "#PWR034" H 6350 5500 50  0001 C CNN
-F 1 "GND" H 6355 5577 50  0000 C CNN
-F 2 "" H 6350 5750 50  0001 C CNN
-F 3 "" H 6350 5750 50  0001 C CNN
-	1    6350 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4450 6250 4450
-Wire Wire Line
-	6350 4750 6250 4750
-Wire Wire Line
-	6350 5050 6250 5050
-Wire Wire Line
-	6350 5350 6250 5350
-Text HLabel 6250 4450 0    50   Input ~ 0
-D4
-Text HLabel 6250 4750 0    50   Input ~ 0
-D5
-Text HLabel 6250 5050 0    50   Input ~ 0
-D6
-Text HLabel 6250 5350 0    50   Input ~ 0
-D7
-Text HLabel 6250 4550 0    50   Input ~ 0
-A12
-Text HLabel 6250 4850 0    50   Input ~ 0
-A13
-Text HLabel 6250 5150 0    50   Input ~ 0
-A14
-Text HLabel 6250 5450 0    50   Input ~ 0
-A15
-Wire Wire Line
-	6250 4550 6350 4550
-Wire Wire Line
-	6350 4850 6250 4850
-Wire Wire Line
-	6250 5150 6350 5150
-Wire Wire Line
-	6350 5450 6250 5450
-Wire Wire Line
-	7350 4450 7500 4450
-Wire Wire Line
-	7500 4450 7500 2450
-Wire Wire Line
-	7350 4750 7550 4750
-Wire Wire Line
-	7550 4750 7550 2550
-Wire Wire Line
-	7350 5050 7600 5050
-Wire Wire Line
-	7600 5050 7600 2650
-Wire Wire Line
-	7350 5350 7650 5350
-Wire Wire Line
-	7650 5350 7650 2750
-Wire Wire Line
-	7650 2750 8150 2750
-Wire Wire Line
-	7600 2650 8150 2650
-Wire Wire Line
-	7550 2550 8150 2550
-Wire Wire Line
-	8150 2450 7500 2450
-Wire Wire Line
-	7450 2350 8150 2350
-Wire Wire Line
-	8150 2250 7400 2250
-Wire Wire Line
-	7350 2150 8150 2150
-Wire Wire Line
-	8150 2050 7350 2050
-$Comp
-L 74xx:74LS377 ADDR1
-U 1 1 5D51A1B4
-P 3650 2550
-F 0 "ADDR1" H 3700 3300 50  0000 L CNN
-F 1 "74LS377" H 3700 3200 50  0000 L CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 3650 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 3650 2550 50  0001 C CNN
-	1    3650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR028
-U 1 1 5D51A1BA
-P 3650 1750
-F 0 "#PWR028" H 3650 1600 50  0001 C CNN
-F 1 "+5V" H 3665 1923 50  0000 C CNN
-F 2 "" H 3650 1750 50  0001 C CNN
-F 3 "" H 3650 1750 50  0001 C CNN
-	1    3650 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5D51A1C0
-P 3650 3350
-F 0 "#PWR029" H 3650 3100 50  0001 C CNN
-F 1 "GND" H 3655 3177 50  0000 C CNN
-F 2 "" H 3650 3350 50  0001 C CNN
-F 3 "" H 3650 3350 50  0001 C CNN
-	1    3650 3350
-	1    0    0    -1  
-$EndComp
-Text HLabel 1250 3250 0    50   Input ~ 0
-~PAGE_IN
-Wire Wire Line
-	3150 2950 3050 2950
-Wire Wire Line
-	1250 3250 1350 3250
-$Comp
-L 74xx:74LS157 U13
-U 1 1 5D51A1CA
-P 1850 2650
-F 0 "U13" H 1900 3500 50  0000 L CNN
-F 1 "74LS157" H 1900 3400 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1850 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 1850 2650 50  0001 C CNN
-	1    1850 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR024
-U 1 1 5D51A1D0
-P 1850 1750
-F 0 "#PWR024" H 1850 1600 50  0001 C CNN
-F 1 "+5V" H 1865 1923 50  0000 C CNN
-F 2 "" H 1850 1750 50  0001 C CNN
-F 3 "" H 1850 1750 50  0001 C CNN
-	1    1850 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 5D51A1D6
-P 1850 3650
-F 0 "#PWR025" H 1850 3400 50  0001 C CNN
-F 1 "GND" H 1855 3477 50  0000 C CNN
-F 2 "" H 1850 3650 50  0001 C CNN
-F 3 "" H 1850 3650 50  0001 C CNN
-	1    1850 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5D51A1DC
-P 1350 3350
-F 0 "#PWR022" H 1350 3100 50  0001 C CNN
-F 1 "GND" H 1355 3177 50  0000 C CNN
-F 2 "" H 1350 3350 50  0001 C CNN
-F 3 "" H 1350 3350 50  0001 C CNN
-	1    1350 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 2050 1250 2050
-Wire Wire Line
-	1350 2350 1250 2350
-Wire Wire Line
-	1350 2650 1250 2650
-Wire Wire Line
-	1350 2950 1250 2950
-Text HLabel 1250 2050 0    50   Input ~ 0
-D0
-Text HLabel 1250 2350 0    50   Input ~ 0
-D1
-Text HLabel 1250 2650 0    50   Input ~ 0
-D2
-Text HLabel 1250 2950 0    50   Input ~ 0
-D3
-Wire Wire Line
-	2350 2350 2350 2150
-Wire Wire Line
-	2350 2650 2400 2650
-Wire Wire Line
-	2400 2650 2400 2250
-Wire Wire Line
-	2350 2950 2450 2950
-Wire Wire Line
-	2450 2950 2450 2350
-Text HLabel 1250 2150 0    50   Input ~ 0
-A0
-Text HLabel 1250 2450 0    50   Input ~ 0
+Text HLabel 3500 1450 0    50   Input ~ 0
 A1
-Text HLabel 1250 2750 0    50   Input ~ 0
+Text HLabel 3500 1550 0    50   Input ~ 0
 A2
-Text HLabel 1250 3050 0    50   Input ~ 0
+Text HLabel 3500 1650 0    50   Input ~ 0
 A3
-Wire Wire Line
-	1250 2150 1350 2150
-Wire Wire Line
-	1350 2450 1250 2450
-Wire Wire Line
-	1250 2750 1350 2750
-Wire Wire Line
-	1350 3050 1250 3050
-Text Label 2750 3250 0    50   ~ 0
-~REG_ENB
-Wire Wire Line
-	3150 3050 3100 3050
-Wire Wire Line
-	3100 3050 3100 3250
-Wire Wire Line
-	3100 3250 2750 3250
-Text HLabel 1250 5650 0    50   Input ~ 0
-~PAGE_IN
-Wire Wire Line
-	1250 5650 1350 5650
-$Comp
-L 74xx:74LS157 U14
-U 1 1 5D51A1FD
-P 1850 5050
-F 0 "U14" H 1900 5900 50  0000 L CNN
-F 1 "74LS157" H 1900 5800 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1850 5050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 1850 5050 50  0001 C CNN
-	1    1850 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR026
-U 1 1 5D51A203
-P 1850 4150
-F 0 "#PWR026" H 1850 4000 50  0001 C CNN
-F 1 "+5V" H 1865 4323 50  0000 C CNN
-F 2 "" H 1850 4150 50  0001 C CNN
-F 3 "" H 1850 4150 50  0001 C CNN
-	1    1850 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR027
-U 1 1 5D51A209
-P 1850 6050
-F 0 "#PWR027" H 1850 5800 50  0001 C CNN
-F 1 "GND" H 1855 5877 50  0000 C CNN
-F 2 "" H 1850 6050 50  0001 C CNN
-F 3 "" H 1850 6050 50  0001 C CNN
-	1    1850 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR023
-U 1 1 5D51A20F
-P 1350 5750
-F 0 "#PWR023" H 1350 5500 50  0001 C CNN
-F 1 "GND" H 1355 5577 50  0000 C CNN
-F 2 "" H 1350 5750 50  0001 C CNN
-F 3 "" H 1350 5750 50  0001 C CNN
-	1    1350 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 4450 1250 4450
-Wire Wire Line
-	1350 4750 1250 4750
-Wire Wire Line
-	1350 5050 1250 5050
-Wire Wire Line
-	1350 5350 1250 5350
-Text HLabel 1250 4450 0    50   Input ~ 0
-D4
-Text HLabel 1250 4750 0    50   Input ~ 0
-D5
-Text HLabel 1250 5050 0    50   Input ~ 0
-D6
-Text HLabel 1250 5350 0    50   Input ~ 0
-D7
-Text HLabel 1250 4550 0    50   Input ~ 0
+Text HLabel 3500 1750 0    50   Input ~ 0
 A4
-Text HLabel 1250 4850 0    50   Input ~ 0
+Text HLabel 3500 1850 0    50   Input ~ 0
 A5
-Text HLabel 1250 5150 0    50   Input ~ 0
+Text HLabel 3500 1950 0    50   Input ~ 0
 A6
-Text HLabel 1250 5450 0    50   Input ~ 0
+Text HLabel 3500 2050 0    50   Input ~ 0
 A7
-Wire Wire Line
-	1250 4550 1350 4550
-Wire Wire Line
-	1350 4850 1250 4850
-Wire Wire Line
-	1250 5150 1350 5150
-Wire Wire Line
-	1350 5450 1250 5450
-Wire Wire Line
-	2350 4450 2500 4450
-Wire Wire Line
-	2500 4450 2500 2450
-Wire Wire Line
-	2350 4750 2550 4750
-Wire Wire Line
-	2550 4750 2550 2550
-Wire Wire Line
-	2350 5050 2600 5050
-Wire Wire Line
-	2600 5050 2600 2650
-Wire Wire Line
-	2350 5350 2650 5350
-Wire Wire Line
-	2650 5350 2650 2750
-Wire Wire Line
-	2650 2750 3150 2750
-Wire Wire Line
-	2600 2650 3150 2650
-Wire Wire Line
-	2550 2550 3150 2550
-Wire Wire Line
-	3150 2450 2500 2450
-Wire Wire Line
-	2450 2350 3150 2350
-Wire Wire Line
-	3150 2250 2400 2250
-Wire Wire Line
-	2350 2150 3150 2150
-Wire Wire Line
-	3150 2050 2350 2050
-$Comp
-L 74xx:74LS245 U16
-U 1 1 5D51DE4A
-P 4750 2550
-F 0 "U16" H 4800 3200 50  0000 L CNN
-F 1 "74LS245" H 4800 3300 50  0000 L CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 4750 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4750 2550 50  0001 C CNN
-	1    4750 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 2050 4250 2050
-Wire Wire Line
-	4250 2150 4150 2150
-Wire Wire Line
-	4150 2250 4250 2250
-Wire Wire Line
-	4250 2350 4150 2350
-Wire Wire Line
-	4150 2450 4250 2450
-Wire Wire Line
-	4250 2550 4150 2550
-Wire Wire Line
-	4150 2650 4250 2650
-Wire Wire Line
-	4250 2750 4150 2750
-$Comp
-L power:+5V #PWR030
-U 1 1 5D553E23
-P 4250 2950
-F 0 "#PWR030" H 4250 2800 50  0001 C CNN
-F 1 "+5V" H 4100 3000 50  0000 C CNN
-F 2 "" H 4250 2950 50  0001 C CNN
-F 3 "" H 4250 2950 50  0001 C CNN
-	1    4250 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 2050 5350 2050
-Wire Wire Line
-	5250 2150 5350 2150
-Wire Wire Line
-	5250 2250 5350 2250
-Wire Wire Line
-	5250 2350 5350 2350
-Wire Wire Line
-	5250 2450 5350 2450
-Wire Wire Line
-	5250 2550 5350 2550
-Wire Wire Line
-	5250 2650 5350 2650
-Wire Wire Line
-	5250 2750 5350 2750
-$Comp
-L power:GND #PWR032
-U 1 1 5D57E21B
-P 4750 3350
-F 0 "#PWR032" H 4750 3100 50  0001 C CNN
-F 1 "GND" H 4755 3177 50  0000 C CNN
-F 2 "" H 4750 3350 50  0001 C CNN
-F 3 "" H 4750 3350 50  0001 C CNN
-	1    4750 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR031
-U 1 1 5D57E5F5
-P 4750 1750
-F 0 "#PWR031" H 4750 1600 50  0001 C CNN
-F 1 "+5V" H 4765 1923 50  0000 C CNN
-F 2 "" H 4750 1750 50  0001 C CNN
-F 3 "" H 4750 1750 50  0001 C CNN
-	1    4750 1750
-	1    0    0    -1  
-$EndComp
-Text HLabel 5350 2050 2    50   Output ~ 0
-A0
-Text HLabel 5350 2150 2    50   Output ~ 0
-A1
-Text HLabel 5350 2250 2    50   Output ~ 0
-A2
-Text HLabel 5350 2350 2    50   Output ~ 0
-A3
-Text HLabel 5350 2450 2    50   Output ~ 0
-A4
-Text HLabel 5350 2550 2    50   Output ~ 0
-A5
-Text HLabel 5350 2650 2    50   Output ~ 0
-A6
-Text HLabel 5350 2750 2    50   Output ~ 0
-A7
-$Comp
-L 74xx:74LS245 U19
-U 1 1 5D58386D
-P 9750 2550
-F 0 "U19" H 9800 3200 50  0000 L CNN
-F 1 "74LS245" H 9800 3300 50  0000 L CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 9750 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 9750 2550 50  0001 C CNN
-	1    9750 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 2050 9250 2050
-Wire Wire Line
-	9250 2150 9150 2150
-Wire Wire Line
-	9150 2250 9250 2250
-Wire Wire Line
-	9250 2350 9150 2350
-Wire Wire Line
-	9150 2450 9250 2450
-Wire Wire Line
-	9250 2550 9150 2550
-Wire Wire Line
-	9150 2650 9250 2650
-Wire Wire Line
-	9250 2750 9150 2750
-$Comp
-L power:+5V #PWR041
-U 1 1 5D58387B
-P 9250 2950
-F 0 "#PWR041" H 9250 2800 50  0001 C CNN
-F 1 "+5V" H 9100 3000 50  0000 C CNN
-F 2 "" H 9250 2950 50  0001 C CNN
-F 3 "" H 9250 2950 50  0001 C CNN
-	1    9250 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 2050 10350 2050
-Wire Wire Line
-	10250 2150 10350 2150
-Wire Wire Line
-	10250 2250 10350 2250
-Wire Wire Line
-	10250 2350 10350 2350
-Wire Wire Line
-	10250 2450 10350 2450
-Wire Wire Line
-	10250 2550 10350 2550
-Wire Wire Line
-	10250 2650 10350 2650
-Wire Wire Line
-	10250 2750 10350 2750
-$Comp
-L power:GND #PWR043
-U 1 1 5D58388B
-P 9750 3350
-F 0 "#PWR043" H 9750 3100 50  0001 C CNN
-F 1 "GND" H 9755 3177 50  0000 C CNN
-F 2 "" H 9750 3350 50  0001 C CNN
-F 3 "" H 9750 3350 50  0001 C CNN
-	1    9750 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR042
-U 1 1 5D583891
-P 9750 1750
-F 0 "#PWR042" H 9750 1600 50  0001 C CNN
-F 1 "+5V" H 9765 1923 50  0000 C CNN
-F 2 "" H 9750 1750 50  0001 C CNN
-F 3 "" H 9750 1750 50  0001 C CNN
-	1    9750 1750
-	1    0    0    -1  
-$EndComp
-Text HLabel 10350 2050 2    50   Output ~ 0
+Text HLabel 3500 4550 0    50   Input ~ 0
 A8
-Text HLabel 10350 2150 2    50   Output ~ 0
+Text HLabel 3500 4650 0    50   Input ~ 0
 A9
-Text HLabel 10350 2250 2    50   Output ~ 0
+Text HLabel 3500 4750 0    50   Input ~ 0
 A10
-Text HLabel 10350 2350 2    50   Output ~ 0
+Text HLabel 3500 4850 0    50   Input ~ 0
 A11
-Text HLabel 10350 2450 2    50   Output ~ 0
+Text HLabel 3500 4950 0    50   Input ~ 0
 A12
-Text HLabel 10350 2550 2    50   Output ~ 0
+Text HLabel 3500 5050 0    50   Input ~ 0
 A13
-Text HLabel 10350 2650 2    50   Output ~ 0
+Text HLabel 3500 5150 0    50   Input ~ 0
 A14
-Text HLabel 10350 2750 2    50   Output ~ 0
+Text HLabel 3500 5250 0    50   Input ~ 0
 A15
+Text HLabel 3500 1350 0    50   Input ~ 0
+A0
+$Sheet
+S 3500 1250 650  1900
+U 5D6C27C3
+F0 "ADDR MUX" 50
+F1 "8mux.sch" 50
+F2 "A0" I L 3500 1350 50 
+F3 "B0" I L 3500 2200 50 
+F4 "A1" I L 3500 1450 50 
+F5 "B1" I L 3500 2300 50 
+F6 "A2" I L 3500 1550 50 
+F7 "B2" I L 3500 2400 50 
+F8 "A3" I L 3500 1650 50 
+F9 "B3" I L 3500 2500 50 
+F10 "S" I L 3500 3050 50 
+F11 "A4" I L 3500 1750 50 
+F12 "B4" I L 3500 2600 50 
+F13 "A5" I L 3500 1850 50 
+F14 "B5" I L 3500 2700 50 
+F15 "A6" I L 3500 1950 50 
+F16 "B6" I L 3500 2800 50 
+F17 "A7" I L 3500 2050 50 
+F18 "B7" I L 3500 2900 50 
+F19 "O0" O R 4150 1350 50 
+F20 "O1" O R 4150 1450 50 
+F21 "O2" O R 4150 1550 50 
+F22 "O3" O R 4150 1650 50 
+F23 "O4" O R 4150 1750 50 
+F24 "O5" O R 4150 1850 50 
+F25 "O6" O R 4150 1950 50 
+F26 "O7" O R 4150 2050 50 
+$EndSheet
+Text HLabel 3500 2900 0    50   Input ~ 0
+D7
+Text HLabel 3500 2800 0    50   Input ~ 0
+D6
+Text HLabel 3500 2700 0    50   Input ~ 0
+D5
+Text HLabel 3500 2600 0    50   Input ~ 0
+D4
+Text HLabel 3500 2500 0    50   Input ~ 0
+D3
+Text HLabel 3500 2400 0    50   Input ~ 0
+D2
+Text HLabel 3500 2300 0    50   Input ~ 0
+D1
+Text HLabel 3500 2200 0    50   Input ~ 0
+D0
+$Comp
+L 74xx:74LS273 U3
+U 1 1 5D6DD87B
+P 5650 1850
+F 0 "U3" H 5700 2600 50  0000 L CNN
+F 1 "74LS273" H 5700 2500 50  0000 L CNN
+F 2 "" H 5650 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS273" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 2350 0    50   Input ~ 0
+~RESET
 Wire Wire Line
-	1900 1200 2000 1200
-Text GLabel 3050 2950 0    50   Input ~ 0
-~CLK
-Text GLabel 8050 2950 0    50   Input ~ 0
+	4150 1350 5150 1350
+Wire Wire Line
+	5150 1450 4150 1450
+Wire Wire Line
+	4150 1550 5150 1550
+Wire Wire Line
+	5150 1650 4150 1650
+Wire Wire Line
+	4150 1750 5150 1750
+Wire Wire Line
+	5150 1850 4150 1850
+Wire Wire Line
+	4150 1950 5150 1950
+Wire Wire Line
+	5150 2050 4150 2050
+Wire Wire Line
+	4500 2250 5150 2250
+Text GLabel 4600 2850 3    50   Input ~ 0
 ~CLK
 $Comp
-L power:+5V #PWR?
-U 1 1 5D553E43
-P 3300 4400
-AR Path="/5D553E43" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D553E43" Ref="#PWR077"  Part="1" 
-F 0 "#PWR077" H 3300 4250 50  0001 C CNN
-F 1 "+5V" H 3315 4573 50  0000 C CNN
-F 2 "" H 3300 4400 50  0001 C CNN
-F 3 "" H 3300 4400 50  0001 C CNN
-	1    3300 4400
+L power:+5V #PWR05
+U 1 1 5D6EC54E
+P 5650 1050
+F 0 "#PWR05" H 5650 900 50  0001 C CNN
+F 1 "+5V" H 5665 1223 50  0000 C CNN
+F 2 "" H 5650 1050 50  0001 C CNN
+F 3 "" H 5650 1050 50  0001 C CNN
+	1    5650 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D553E49
-P 3300 4650
-AR Path="/5D553E49" Ref="C?"  Part="1" 
-AR Path="/5D4A1E87/5D553E49" Ref="C6"  Part="1" 
-F 0 "C6" H 3415 4696 50  0000 L CNN
-F 1 "0.1µF" H 3415 4605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3338 4500 50  0001 C CNN
-F 3 "~" H 3300 4650 50  0001 C CNN
-	1    3300 4650
+L power:GND #PWR06
+U 1 1 5D6EC773
+P 5650 2650
+F 0 "#PWR06" H 5650 2400 50  0001 C CNN
+F 1 "GND" H 5655 2477 50  0000 C CNN
+F 2 "" H 5650 2650 50  0001 C CNN
+F 3 "" H 5650 2650 50  0001 C CNN
+	1    5650 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D553E4F
-P 3300 4900
-AR Path="/5D553E4F" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D553E4F" Ref="#PWR078"  Part="1" 
-F 0 "#PWR078" H 3300 4650 50  0001 C CNN
-F 1 "GND" H 3305 4727 50  0000 C CNN
-F 2 "" H 3300 4900 50  0001 C CNN
-F 3 "" H 3300 4900 50  0001 C CNN
-	1    3300 4900
+L 74xx:74LS245 U5
+U 1 1 5D6ECCB8
+P 6650 1850
+F 0 "U5" H 6700 2600 50  0000 L CNN
+F 1 "74LS245" H 6700 2500 50  0000 L CNN
+F 2 "" H 6650 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6650 1850 50  0001 C CNN
+	1    6650 1850
 	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5D6EEAB5
+P 6650 1050
+F 0 "#PWR011" H 6650 900 50  0001 C CNN
+F 1 "+5V" H 6665 1223 50  0000 C CNN
+F 2 "" H 6650 1050 50  0001 C CNN
+F 3 "" H 6650 1050 50  0001 C CNN
+	1    6650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5D6EEED9
+P 6650 2650
+F 0 "#PWR012" H 6650 2400 50  0001 C CNN
+F 1 "GND" H 6655 2477 50  0000 C CNN
+F 2 "" H 6650 2650 50  0001 C CNN
+F 3 "" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5D6EF1DF
+P 6150 2250
+F 0 "#PWR09" H 6150 2100 50  0001 C CNN
+F 1 "+5V" H 6050 2250 50  0000 C CNN
+F 2 "" H 6150 2250 50  0001 C CNN
+F 3 "" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U2
+U 1 1 5D6EFF27
+P 4400 3200
+F 0 "U2" V 4446 3020 50  0000 R CNN
+F 1 "74LS32" V 4355 3020 50  0000 R CNN
+F 2 "" H 4400 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3300 4900 3300 4800
-Wire Wire Line
-	3300 4500 3300 4400
+	4400 2850 4400 2900
+Text HLabel 4300 3600 3    50   Input ~ 0
+ADDR_IN
+Text HLabel 4500 3500 3    50   Input ~ 0
+FROM_ADRB
 $Comp
-L power:+5V #PWR?
-U 1 1 5D561129
-P 8500 4350
-AR Path="/5D561129" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D561129" Ref="#PWR081"  Part="1" 
-F 0 "#PWR081" H 8500 4200 50  0001 C CNN
-F 1 "+5V" H 8515 4523 50  0000 C CNN
-F 2 "" H 8500 4350 50  0001 C CNN
-F 3 "" H 8500 4350 50  0001 C CNN
-	1    8500 4350
+L 74xx:74LS08 U1
+U 1 1 5D6E14C0
+P 4500 2550
+F 0 "U1" V 4546 2370 50  0000 R CNN
+F 1 "74LS08" V 4455 2370 50  0000 R CNN
+F 2 "" H 4500 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3600 4300 3550
+Wire Wire Line
+	4300 3550 3450 3550
+Wire Wire Line
+	3450 3550 3450 3050
+Wire Wire Line
+	3450 3050 3500 3050
+Connection ~ 4300 3550
+Wire Wire Line
+	4300 3550 4300 3500
+$Sheet
+S 3500 4450 650  1900
+U 5D7339BB
+F0 "PAGE MUX" 50
+F1 "8mux.sch" 50
+F2 "A0" I L 3500 4550 50 
+F3 "B0" I L 3500 5400 50 
+F4 "A1" I L 3500 4650 50 
+F5 "B1" I L 3500 5500 50 
+F6 "A2" I L 3500 4750 50 
+F7 "B2" I L 3500 5600 50 
+F8 "A3" I L 3500 4850 50 
+F9 "B3" I L 3500 5700 50 
+F10 "S" I L 3500 6250 50 
+F11 "A4" I L 3500 4950 50 
+F12 "B4" I L 3500 5800 50 
+F13 "A5" I L 3500 5050 50 
+F14 "B5" I L 3500 5900 50 
+F15 "A6" I L 3500 5150 50 
+F16 "B6" I L 3500 6000 50 
+F17 "A7" I L 3500 5250 50 
+F18 "B7" I L 3500 6100 50 
+F19 "O0" O R 4150 4550 50 
+F20 "O1" O R 4150 4650 50 
+F21 "O2" O R 4150 4750 50 
+F22 "O3" O R 4150 4850 50 
+F23 "O4" O R 4150 4950 50 
+F24 "O5" O R 4150 5050 50 
+F25 "O6" O R 4150 5150 50 
+F26 "O7" O R 4150 5250 50 
+$EndSheet
+Text HLabel 3500 6100 0    50   Input ~ 0
+D7
+Text HLabel 3500 6000 0    50   Input ~ 0
+D6
+Text HLabel 3500 5900 0    50   Input ~ 0
+D5
+Text HLabel 3500 5800 0    50   Input ~ 0
+D4
+Text HLabel 3500 5700 0    50   Input ~ 0
+D3
+Text HLabel 3500 5600 0    50   Input ~ 0
+D2
+Text HLabel 3500 5500 0    50   Input ~ 0
+D1
+Text HLabel 3500 5400 0    50   Input ~ 0
+D0
+$Comp
+L 74xx:74LS273 U4
+U 1 1 5D7339C9
+P 5650 5050
+F 0 "U4" H 5700 5800 50  0000 L CNN
+F 1 "74LS273" H 5700 5700 50  0000 L CNN
+F 2 "" H 5650 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS273" H 5650 5050 50  0001 C CNN
+	1    5650 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 5550 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	4150 4550 5150 4550
+Wire Wire Line
+	5150 4650 4150 4650
+Wire Wire Line
+	4150 4750 5150 4750
+Wire Wire Line
+	5150 4850 4150 4850
+Wire Wire Line
+	4150 4950 5150 4950
+Wire Wire Line
+	5150 5050 4150 5050
+Wire Wire Line
+	4150 5150 5150 5150
+Wire Wire Line
+	5150 5250 4150 5250
+Wire Wire Line
+	4500 5450 5150 5450
+Text GLabel 4600 6050 3    50   Input ~ 0
+~CLK
+$Comp
+L power:+5V #PWR07
+U 1 1 5D7339DA
+P 5650 4250
+F 0 "#PWR07" H 5650 4100 50  0001 C CNN
+F 1 "+5V" H 5665 4423 50  0000 C CNN
+F 2 "" H 5650 4250 50  0001 C CNN
+F 3 "" H 5650 4250 50  0001 C CNN
+	1    5650 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D56112F
-P 8500 4600
-AR Path="/5D56112F" Ref="C?"  Part="1" 
-AR Path="/5D4A1E87/5D56112F" Ref="C8"  Part="1" 
-F 0 "C8" H 8615 4646 50  0000 L CNN
-F 1 "0.1µF" H 8615 4555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 8538 4450 50  0001 C CNN
-F 3 "~" H 8500 4600 50  0001 C CNN
-	1    8500 4600
+L power:GND #PWR08
+U 1 1 5D7339E0
+P 5650 5850
+F 0 "#PWR08" H 5650 5600 50  0001 C CNN
+F 1 "GND" H 5655 5677 50  0000 C CNN
+F 2 "" H 5650 5850 50  0001 C CNN
+F 3 "" H 5650 5850 50  0001 C CNN
+	1    5650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D561135
-P 8500 4850
-AR Path="/5D561135" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D561135" Ref="#PWR082"  Part="1" 
-F 0 "#PWR082" H 8500 4600 50  0001 C CNN
-F 1 "GND" H 8505 4677 50  0000 C CNN
-F 2 "" H 8500 4850 50  0001 C CNN
-F 3 "" H 8500 4850 50  0001 C CNN
-	1    8500 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 4850 8500 4750
-Wire Wire Line
-	8500 4450 8500 4350
-$Comp
-L power:+5V #PWR?
-U 1 1 5D56900C
-P 9400 4350
-AR Path="/5D56900C" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D56900C" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 9400 4200 50  0001 C CNN
-F 1 "+5V" H 9415 4523 50  0000 C CNN
-F 2 "" H 9400 4350 50  0001 C CNN
-F 3 "" H 9400 4350 50  0001 C CNN
-	1    9400 4350
+L 74xx:74LS245 U6
+U 1 1 5D7339E6
+P 6650 5050
+F 0 "U6" H 6700 5800 50  0000 L CNN
+F 1 "74LS245" H 6700 5700 50  0000 L CNN
+F 2 "" H 6650 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6650 5050 50  0001 C CNN
+	1    6650 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D569012
-P 9400 4600
-AR Path="/5D569012" Ref="C?"  Part="1" 
-AR Path="/5D4A1E87/5D569012" Ref="C9"  Part="1" 
-F 0 "C9" H 9515 4646 50  0000 L CNN
-F 1 "0.1µF" H 9515 4555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 9438 4450 50  0001 C CNN
-F 3 "~" H 9400 4600 50  0001 C CNN
-	1    9400 4600
+L power:+5V #PWR013
+U 1 1 5D7339F2
+P 6650 4250
+F 0 "#PWR013" H 6650 4100 50  0001 C CNN
+F 1 "+5V" H 6665 4423 50  0000 C CNN
+F 2 "" H 6650 4250 50  0001 C CNN
+F 3 "" H 6650 4250 50  0001 C CNN
+	1    6650 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D569018
-P 9400 4850
-AR Path="/5D569018" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D569018" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 9400 4600 50  0001 C CNN
-F 1 "GND" H 9405 4677 50  0000 C CNN
-F 2 "" H 9400 4850 50  0001 C CNN
-F 3 "" H 9400 4850 50  0001 C CNN
-	1    9400 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 4850 9400 4750
-Wire Wire Line
-	9400 4450 9400 4350
-Wire Wire Line
-	4250 3050 4250 3100
-Text HLabel 4250 3100 3    50   Input ~ 0
-~TO_ADBR
-Wire Wire Line
-	9250 3050 9250 3100
-Text HLabel 9250 3100 3    50   Input ~ 0
-~TO_ADBR
-Wire Wire Line
-	6850 6050 6850 6100
-$Comp
-L power:GND #PWR0169
-U 1 1 5D8B80E0
-P 6850 6100
-F 0 "#PWR0169" H 6850 5850 50  0001 C CNN
-F 1 "GND" H 6855 5927 50  0000 C CNN
-F 2 "" H 6850 6100 50  0001 C CNN
-F 3 "" H 6850 6100 50  0001 C CNN
-	1    6850 6100
+L power:GND #PWR014
+U 1 1 5D7339F8
+P 6650 5850
+F 0 "#PWR014" H 6650 5600 50  0001 C CNN
+F 1 "GND" H 6655 5677 50  0000 C CNN
+F 2 "" H 6650 5850 50  0001 C CNN
+F 3 "" H 6650 5850 50  0001 C CNN
+	1    6650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5D8C8905
-P 4000 4400
-AR Path="/5D8C8905" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D8C8905" Ref="#PWR0172"  Part="1" 
-F 0 "#PWR0172" H 4000 4250 50  0001 C CNN
-F 1 "+5V" H 4015 4573 50  0000 C CNN
-F 2 "" H 4000 4400 50  0001 C CNN
-F 3 "" H 4000 4400 50  0001 C CNN
-	1    4000 4400
+L power:+5V #PWR010
+U 1 1 5D7339FE
+P 6150 5450
+F 0 "#PWR010" H 6150 5300 50  0001 C CNN
+F 1 "+5V" H 6050 5450 50  0000 C CNN
+F 2 "" H 6150 5450 50  0001 C CNN
+F 3 "" H 6150 5450 50  0001 C CNN
+	1    6150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D8C890B
-P 4000 4650
-AR Path="/5D8C890B" Ref="C?"  Part="1" 
-AR Path="/5D4A1E87/5D8C890B" Ref="C7"  Part="1" 
-F 0 "C7" H 4115 4696 50  0000 L CNN
-F 1 "0.1µF" H 4115 4605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 4038 4500 50  0001 C CNN
-F 3 "~" H 4000 4650 50  0001 C CNN
-	1    4000 4650
+L 74xx:74LS32 U2
+U 2 1 5D733A04
+P 4400 6400
+F 0 "U2" V 4446 6220 50  0000 R CNN
+F 1 "74LS32" V 4355 6220 50  0000 R CNN
+F 2 "" H 4400 6400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4400 6400 50  0001 C CNN
+	2    4400 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 6050 4400 6100
+Text HLabel 4300 6800 3    50   Input ~ 0
+PAGE_IN
+Text HLabel 4500 6700 3    50   Input ~ 0
+FROM_ADRB
+$Comp
+L 74xx:74LS08 U1
+U 2 1 5D733A0D
+P 4500 5750
+F 0 "U1" V 4546 5570 50  0000 R CNN
+F 1 "74LS08" V 4455 5570 50  0000 R CNN
+F 2 "" H 4500 5750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4500 5750 50  0001 C CNN
+	2    4500 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 6800 4300 6750
+Wire Wire Line
+	4300 6750 3450 6750
+Wire Wire Line
+	3450 6750 3450 6250
+Wire Wire Line
+	3450 6250 3500 6250
+Connection ~ 4300 6750
+Wire Wire Line
+	4300 6750 4300 6700
+Text HLabel 7150 1450 2    50   Output ~ 0
+A1
+Text HLabel 7150 1550 2    50   Output ~ 0
+A2
+Text HLabel 7150 1650 2    50   Output ~ 0
+A3
+Text HLabel 7150 1750 2    50   Output ~ 0
+A4
+Text HLabel 7150 1850 2    50   Output ~ 0
+A5
+Text HLabel 7150 1950 2    50   Output ~ 0
+A6
+Text HLabel 7150 2050 2    50   Output ~ 0
+A7
+Text HLabel 7150 1350 2    50   Output ~ 0
+A0
+Text HLabel 7150 4550 2    50   Output ~ 0
+A8
+Text HLabel 7150 4650 2    50   Output ~ 0
+A9
+Text HLabel 7150 4750 2    50   Output ~ 0
+A10
+Text HLabel 7150 4850 2    50   Output ~ 0
+A11
+Text HLabel 7150 4950 2    50   Output ~ 0
+A12
+Text HLabel 7150 5050 2    50   Output ~ 0
+A13
+Text HLabel 7150 5150 2    50   Output ~ 0
+A14
+Text HLabel 7150 5250 2    50   Output ~ 0
+A15
+$Comp
+L 74xx:74LS08 U1
+U 5 1 5D6C006F
+P 850 1300
+F 0 "U1" H 1080 1346 50  0000 L CNN
+F 1 "74LS08" H 1080 1255 50  0000 L CNN
+F 2 "" H 850 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 850 1300 50  0001 C CNN
+	5    850  1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D8C8911
-P 4000 4900
-AR Path="/5D8C8911" Ref="#PWR?"  Part="1" 
-AR Path="/5D4A1E87/5D8C8911" Ref="#PWR0173"  Part="1" 
-F 0 "#PWR0173" H 4000 4650 50  0001 C CNN
-F 1 "GND" H 4005 4727 50  0000 C CNN
-F 2 "" H 4000 4900 50  0001 C CNN
-F 3 "" H 4000 4900 50  0001 C CNN
-	1    4000 4900
+L 74xx:74LS32 U2
+U 5 1 5D6C64FB
+P 1650 1300
+F 0 "U2" H 1880 1346 50  0000 L CNN
+F 1 "74LS32" H 1880 1255 50  0000 L CNN
+F 2 "" H 1650 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1650 1300 50  0001 C CNN
+	5    1650 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 4900 4000 4800
-Wire Wire Line
-	4000 4500 4000 4400
-Text Notes 4150 1100 0    118  ~ 24
-WRONG! This needs fixing. ~REG_ENB~ isn’t the same for both registers.
+$Comp
+L power:+5V #PWR01
+U 1 1 5D6C86DC
+P 850 800
+F 0 "#PWR01" H 850 650 50  0001 C CNN
+F 1 "+5V" H 865 973 50  0000 C CNN
+F 2 "" H 850 800 50  0001 C CNN
+F 3 "" H 850 800 50  0001 C CNN
+	1    850  800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5D6C8C72
+P 1650 800
+F 0 "#PWR03" H 1650 650 50  0001 C CNN
+F 1 "+5V" H 1665 973 50  0000 C CNN
+F 2 "" H 1650 800 50  0001 C CNN
+F 3 "" H 1650 800 50  0001 C CNN
+	1    1650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D6C92C7
+P 1650 1800
+F 0 "#PWR04" H 1650 1550 50  0001 C CNN
+F 1 "GND" H 1655 1627 50  0000 C CNN
+F 2 "" H 1650 1800 50  0001 C CNN
+F 3 "" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D6C986F
+P 850 1800
+F 0 "#PWR02" H 850 1550 50  0001 C CNN
+F 1 "GND" H 855 1627 50  0000 C CNN
+F 2 "" H 850 1800 50  0001 C CNN
+F 3 "" H 850 1800 50  0001 C CNN
+	1    850  1800
+	1    0    0    -1  
+$EndComp
+Text HLabel 6150 2350 3    50   Input ~ 0
+~TO_ADRB
+Text HLabel 6150 5550 3    50   Input ~ 0
+~TO_ADRB
 $EndSCHEMATC
