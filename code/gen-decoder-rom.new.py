@@ -71,8 +71,12 @@ def output(io):
 
 def input(io):
     return DATA_IN | (io << IN)
+
+def transfer(source, to):
+    return output(source) | input(to)
     
-# These helper functions let you write mk_out(A_IO) in place of DATA_OUT | (A_IO << OUT).
+# These helper functions let you write mk_out(A_IO) in place of DATA_OUT | (A_IO << OUT). And
+# even better, to use transfer(A_IO, B_IO) for example to transfer data from A to B.
 
 MAR_TO_ADRB = 1 << 12
 ADRB_TO_MAR = 1 << 13
@@ -94,9 +98,9 @@ C = 0b01
 
 # The four control words used for the fetch + decode stage.
 FETCH = [
-    output(RAM_IO) | input(OP_IO) | PC_OUT,
+    transfer(RAM_IO, OP_IO) | PC_OUT,
     COUNT,
-    output(RAM_IO) | input(ARG_IO) | PC_OUT,
+    transfer(RAM_IO, ARG_IO) | PC_OUT,
     COUNT,
 ]
 
@@ -106,61 +110,61 @@ INSTRUCTIONS = [
     [ HALT ],
     
     # 1: LDA x
-    [ output(ARG_IO) | input(ADDR_IO),
-      output(ACC_IO) | input(RAM_IO) | MAR_TO_ADRB ],
+    [ transfer(ARG_IO, ADDR_IO),
+      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
     
     # 2: STA x
-    [ output(ARG_IO) | input(ADDR_IO),
-      output(ACC_IO) | input(RAM_IO) | MAR_TO_ADRB ],
+    [ transfer(ARG_IO, ADDR_IO),
+      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
     
     # 3: OUT
-    [ output(ACC_IO) | input(OUT_IO) ],
+    [ transfer(ACC_IO, OUT_IO) ],
     
     # 4: NO-OP
     [],
     
     # 5: MEMREFLD x
-    [ output(ARG_IO) | input(ADDR_IO),
-      output(RAM_IO) | input(ADDR_IO) | MAR_TO_ADRB,
-      output(RAM_IO) | input(ACC_IO) | MAR_TO_ADRB ],
+    [ transfer(ARG_IO, ADDR_IO),
+      transfer(RAM_IO, ADDR_IO) | MAR_TO_ADRB,
+      transfer(RAM_IO, ACC_IO) | MAR_TO_ADRB ],
     
     # 6: A->B
-    [ output(A_IO) | input(B_IO) ],
+    [ transfer(A_IO, B_IO) ],
     
     # 7: A->ACC
-    [ output(A_IO) | input(ACC_IO) ],
+    [ transfer(A_IO, ACC_IO) ],
     
     # 8: AREFLD
-    [ output(A_IO) | input(ADDR_IO),
-      output(RAM_IO) | input(ACC_IO) | MAR_TO_ADRB ],
+    [ transfer(A_IO, ADDR_IO),
+      transfer(RAM_IO, ACC_IO) | MAR_TO_ADRB ],
     
     # 9: B->A
-    [ output(B_IO) | input(A_IO) ],
+    [ transfer(B_IO, A_IO) ],
     
     # 10: BREFLD
-    [ output(B_IO) | input(ADDR_IO),
-      output(RAM_IO) | input(ACC_IO) | MAR_TO_ADRB ],
+    [ transfer(B_IO, ADDR_IO),
+      transfer(RAM_IO, ACC_IO) | MAR_TO_ADRB ],
     
     # 11: B->ACC
-    [ ouput(B_IO) | input(ACC_IO) ],
+    [ transfer(B_IO, ACC_IO) ],
     
     # 12: MEMREFST x
-    [ output(ARG_IO) | input(ADDR_IO),
-      output(RAM_IO) | input(ADDR_IO) | MAR_TO_ADRB,
-      output(ACC_IO) | input(RAM_IO) | MAR_TO_ADRB ],
+    [ transfer(ARG_IO, ADDR_IO),
+      transfer(RAM_IO, ADDR_IO) | MAR_TO_ADRB,
+      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
     
     # 13: ACC->A
-    [ output(ACC_IO) | input(A_IO) ],
+    [ transfer(ACC_IO, A_IO) ],
     
     # 14: ACC->B
-    [ output(ACC_IO) | input(B_IO) ],
+    [ transfer(ACC_IO, B_IO) ],
     
     # 15: AREFST
-    [ output(A_IO) | input(ADDR_IO),
-      output(ACC_IO) | input(RAM_IO) | MAR_TO_ADRB ],
+    [ transfer(A_IO, ADDR_IO),
+      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
     
     # 16: ADDR x
-    [ output(ARG_IO) | input(ADDR_IO) | LATCH_ACC,
+    [ transfer(ARG_IO, ADDR_IO) | LATCH_ACC,
       output(RAM_IO) | MAR_TO_ADRB | SUM_TO_ACC | FLAG_IN ],
     
     # 17: ADDA
@@ -173,10 +177,10 @@ INSTRUCTIONS = [
     
     # 19: BREFST
     [ output(B_IO) | ADDR_IO,
-      output(ACC_IO) | input(RAM_IO) | MAR_TO_ADRB ],
+      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
     
     # 20: SUBR x
-    [ output(ARG_IO) | input(ADDR_IO) | LATCH_ACC,
+    [ transfer(ARG_IO, ADDR_IO) | LATCH_ACC,
       output(RAM_IO) | MAR_TO_ADRB | SUM_TO_ACC | FLAG_IN | SUB ],
     
     # 21: SUBA
@@ -188,48 +192,50 @@ INSTRUCTIONS = [
       output(B_IO) | SUM_TO_ACC | FLAG_IN | SUB ],
     
     # 23: PAGE x
-    [ output(ARG_IO) | input(PAGE_IO) ],
+    [ transfer(ARG_IO, PAGE_IO) ],
     
     # 24: JMP x
-    [ output(ARG_IO) | input(ADDR_IO),
+    [ transfer(ARG_IO, ADDR_IO),
       JUMP | MAR_TO_ADRB ],
     
     # 25: JZ x
     {
-        Z: [ output(ARG_IO) | input(ADDR_IO),
+        Z: [ transfer(ARG_IO, ADDR_IO),
              JUMP | MAR_TO_ADRB ],
-        Z | C: [ output(ARG_IO) | input(ADDR_IO),
+        Z | C: [ transfer(ARG_IO, ADDR_IO),
                  JUMP | MAR_TO_ADRB ],
     },
     
     # 26: JC x
     {
-        C: [ output(ARG_IO) | input(ADDR_IO),
+        C: [ transfer(ARG_IO, ADDR_IO),
              JUMP | MAR_TO_ADRB ],
-        Z | C: [ output(ARG_IO) | input(ADDR_IO),
+        Z | C: [ transfer(ARG_IO, ADDR_IO),
                  JUMP | MAR_TO_ADRB ],
     },
     
     # 27: PUSH
     [ SPTR_DECR,
-      output(ACC_IO) | input(RAM_IO) | SPTR_OUT ],
+      transfer(ACC_IO, RAM_IO) | SPTR_OUT ],
     
     # 28: POP
-    [ output(RAM_IO) | input(ACC_IO) | SPTR_OUT,
+    [ transfer(RAM_IO, ACC_IO) | SPTR_OUT,
       SPTR_INCR ],
     
     # 29: CALL x
     [ SPTR_DECR,
-      output(PC_ADDR_IO) | input(RAM_IO) | SPTR_OUT,
+      transfer(PC_ADDR_IO, RAM_IO) | SPTR_OUT,
       SPTR_DECR,
-      output(PC_PAGE_IO) | input(RAM_IO) | SPTR_OUT,
-      output(ARG_IO) | input(ADDR_IO),
+      transfer(PC_PAGE_IO, RAM_IO) | SPTR_OUT,
+      transfer(ARG_IO, ADDR_IO),
       JUMP | MAR_TO_ADRB ],
     
     # 30: RETURN
-    [ output(RAM_IO) | input(PAGE_IO) | SPTR_OUT,
+    [ transfer(RAM_IO, PAGE_IO) | SPTR_OUT,
       SPTR_INCR,
-      output(RAM_IO) | input(ADDR_IO) | SPTR_OUT,
+      transfer(RAM_IO, ADDR_IO) | SPTR_OUT,
       SPTR_INCR,
       JUMP | MAR_TO_ADRB ],
 ]
+
+print(INSTRUCTIONS)
