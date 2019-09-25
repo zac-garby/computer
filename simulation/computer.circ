@@ -132,7 +132,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="incoming" val="16"/>
       <a name="appear" val="right"/>
     </tool>
-    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="NOT Gate">
+      <a name="facing" val="north"/>
+    </tool>
     <tool lib="1" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
@@ -157,6 +159,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(340,540)" to="(350,540)"/>
     <wire from="(130,370)" to="(130,400)"/>
     <wire from="(290,660)" to="(310,660)"/>
+    <wire from="(760,810)" to="(790,810)"/>
+    <wire from="(760,880)" to="(890,880)"/>
     <wire from="(520,200)" to="(520,220)"/>
     <wire from="(160,350)" to="(270,350)"/>
     <wire from="(370,590)" to="(390,590)"/>
@@ -164,7 +168,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(600,320)" to="(600,340)"/>
     <wire from="(170,510)" to="(190,510)"/>
     <wire from="(280,300)" to="(280,310)"/>
-    <wire from="(470,760)" to="(560,760)"/>
     <wire from="(140,400)" to="(150,400)"/>
     <wire from="(310,320)" to="(320,320)"/>
     <wire from="(330,110)" to="(330,150)"/>
@@ -195,11 +198,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(550,280)" to="(560,280)"/>
     <wire from="(150,380)" to="(160,380)"/>
     <wire from="(580,340)" to="(580,380)"/>
+    <wire from="(550,780)" to="(740,780)"/>
     <wire from="(380,670)" to="(390,670)"/>
+    <wire from="(760,790)" to="(790,790)"/>
     <wire from="(150,370)" to="(150,380)"/>
     <wire from="(460,650)" to="(460,730)"/>
     <wire from="(510,280)" to="(520,280)"/>
-    <wire from="(760,860)" to="(790,860)"/>
     <wire from="(570,400)" to="(620,400)"/>
     <wire from="(280,390)" to="(280,460)"/>
     <wire from="(290,620)" to="(300,620)"/>
@@ -215,7 +219,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(350,260)" to="(350,270)"/>
     <wire from="(280,640)" to="(280,650)"/>
     <wire from="(270,470)" to="(320,470)"/>
-    <wire from="(470,770)" to="(740,770)"/>
+    <wire from="(550,760)" to="(550,780)"/>
     <wire from="(160,360)" to="(280,360)"/>
     <wire from="(430,730)" to="(460,730)"/>
     <wire from="(270,350)" to="(270,470)"/>
@@ -226,6 +230,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,540)" to="(270,550)"/>
     <wire from="(510,860)" to="(640,860)"/>
     <wire from="(350,510)" to="(390,510)"/>
+    <wire from="(760,800)" to="(890,800)"/>
     <wire from="(550,300)" to="(620,300)"/>
     <wire from="(140,370)" to="(140,400)"/>
     <wire from="(270,620)" to="(270,780)"/>
@@ -234,7 +239,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,470)" to="(270,540)"/>
     <wire from="(210,570)" to="(210,630)"/>
     <wire from="(420,730)" to="(420,760)"/>
-    <wire from="(760,830)" to="(890,830)"/>
     <wire from="(250,510)" to="(280,510)"/>
     <wire from="(280,480)" to="(320,480)"/>
     <wire from="(560,190)" to="(580,190)"/>
@@ -249,6 +253,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(550,320)" to="(600,320)"/>
     <wire from="(580,660)" to="(610,660)"/>
     <wire from="(430,630)" to="(440,630)"/>
+    <wire from="(470,760)" to="(550,760)"/>
     <wire from="(270,550)" to="(310,550)"/>
     <wire from="(270,280)" to="(270,340)"/>
     <wire from="(450,800)" to="(450,810)"/>
@@ -263,7 +268,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(280,580)" to="(310,580)"/>
     <wire from="(110,380)" to="(120,380)"/>
     <wire from="(500,190)" to="(500,200)"/>
-    <wire from="(760,820)" to="(790,820)"/>
     <wire from="(510,870)" to="(540,870)"/>
     <wire from="(370,690)" to="(390,690)"/>
     <wire from="(380,380)" to="(400,380)"/>
@@ -286,12 +290,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(390,280)" to="(510,280)"/>
     <wire from="(370,730)" to="(420,730)"/>
     <wire from="(580,380)" to="(620,380)"/>
+    <wire from="(760,820)" to="(890,820)"/>
     <wire from="(280,390)" to="(320,390)"/>
     <wire from="(560,180)" to="(620,180)"/>
-    <wire from="(760,790)" to="(890,790)"/>
     <wire from="(510,840)" to="(640,840)"/>
     <wire from="(260,630)" to="(260,770)"/>
     <wire from="(200,510)" to="(220,510)"/>
+    <wire from="(760,870)" to="(790,870)"/>
     <wire from="(170,530)" to="(220,530)"/>
     <wire from="(320,250)" to="(370,250)"/>
     <wire from="(280,170)" to="(530,170)"/>
@@ -300,7 +305,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(510,280)" to="(510,290)"/>
     <wire from="(200,560)" to="(220,560)"/>
     <wire from="(360,530)" to="(360,550)"/>
-    <wire from="(760,780)" to="(790,780)"/>
     <wire from="(190,550)" to="(190,570)"/>
     <wire from="(350,470)" to="(380,470)"/>
     <wire from="(270,170)" to="(270,280)"/>
@@ -310,7 +314,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(250,630)" to="(260,630)"/>
     <wire from="(350,680)" to="(360,680)"/>
     <wire from="(350,320)" to="(400,320)"/>
-    <wire from="(760,800)" to="(790,800)"/>
     <wire from="(510,890)" to="(540,890)"/>
     <wire from="(350,670)" to="(370,670)"/>
     <wire from="(250,620)" to="(270,620)"/>
@@ -329,6 +332,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(380,300)" to="(400,300)"/>
     <wire from="(240,200)" to="(280,200)"/>
     <wire from="(200,560)" to="(200,590)"/>
+    <wire from="(760,840)" to="(890,840)"/>
     <wire from="(570,350)" to="(570,400)"/>
     <wire from="(350,650)" to="(390,650)"/>
     <wire from="(580,630)" to="(710,630)"/>
@@ -342,12 +346,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,240)" to="(370,250)"/>
     <wire from="(210,570)" to="(220,570)"/>
     <wire from="(270,540)" to="(310,540)"/>
+    <wire from="(760,890)" to="(790,890)"/>
+    <wire from="(470,770)" to="(560,770)"/>
     <wire from="(350,750)" to="(350,810)"/>
     <wire from="(580,610)" to="(710,610)"/>
     <wire from="(430,650)" to="(460,650)"/>
     <wire from="(320,260)" to="(330,260)"/>
     <wire from="(350,510)" to="(350,540)"/>
-    <wire from="(510,800)" to="(640,800)"/>
     <wire from="(280,170)" to="(280,200)"/>
     <wire from="(310,660)" to="(310,710)"/>
     <wire from="(290,140)" to="(370,140)"/>
@@ -355,6 +360,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(510,910)" to="(540,910)"/>
     <wire from="(590,360)" to="(620,360)"/>
     <wire from="(280,640)" to="(320,640)"/>
+    <wire from="(560,760)" to="(560,770)"/>
     <wire from="(510,290)" to="(520,290)"/>
     <wire from="(510,920)" to="(640,920)"/>
     <wire from="(210,630)" to="(210,670)"/>
@@ -367,6 +373,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(310,710)" to="(320,710)"/>
     <wire from="(380,630)" to="(380,640)"/>
     <wire from="(270,780)" to="(440,780)"/>
+    <wire from="(760,830)" to="(790,830)"/>
     <wire from="(510,930)" to="(540,930)"/>
     <wire from="(170,620)" to="(220,620)"/>
     <wire from="(430,630)" to="(430,650)"/>
@@ -393,9 +400,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(290,560)" to="(310,560)"/>
     <wire from="(510,810)" to="(540,810)"/>
     <wire from="(370,450)" to="(380,450)"/>
-    <wire from="(510,790)" to="(540,790)"/>
     <wire from="(380,300)" to="(380,310)"/>
-    <wire from="(760,810)" to="(890,810)"/>
     <comp lib="0" loc="(640,860)" name="Tunnel">
       <a name="label" val="SUM_TO_ACC"/>
     </comp>
@@ -409,9 +414,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Data"/>
     </comp>
     <comp lib="5" loc="(410,110)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(890,830)" name="Tunnel">
-      <a name="label" val="OP_IN"/>
-    </comp>
     <comp lib="5" loc="(330,110)" name="Hex Digit Display"/>
     <comp lib="0" loc="(540,810)" name="Tunnel">
       <a name="label" val="MAR_TO_ADRB"/>
@@ -424,9 +426,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(144,319)" name="Text">
       <a name="text" val="Memory Address Register"/>
     </comp>
-    <comp lib="0" loc="(790,780)" name="Tunnel">
-      <a name="label" val="A_IN"/>
-    </comp>
     <comp lib="6" loc="(226,84)" name="Text">
       <a name="halign" val="left"/>
     </comp>
@@ -436,6 +435,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="5" loc="(370,240)" name="Hex Digit Display"/>
     <comp lib="0" loc="(710,610)" name="Tunnel">
       <a name="label" val="B_OUT"/>
+    </comp>
+    <comp lib="0" loc="(790,830)" name="Tunnel">
+      <a name="label" val="ARG_IN"/>
     </comp>
     <comp loc="(350,460)" name="ram"/>
     <comp lib="0" loc="(170,570)" name="Tunnel">
@@ -453,9 +455,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="6" loc="(595,75)" name="Text">
       <a name="text" val="Output"/>
-    </comp>
-    <comp lib="0" loc="(790,860)" name="Tunnel">
-      <a name="label" val="OUTPUT"/>
     </comp>
     <comp lib="0" loc="(170,620)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -479,6 +478,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(610,640)" name="Tunnel">
       <a name="label" val="ARG_OUT"/>
     </comp>
+    <comp lib="0" loc="(790,870)" name="Tunnel">
+      <a name="label" val="OUTPUT"/>
+    </comp>
+    <comp lib="0" loc="(890,840)" name="Tunnel">
+      <a name="label" val="OP_IN"/>
+    </comp>
     <comp lib="6" loc="(496,744)" name="Text">
       <a name="text" val="Instruction Decoder"/>
     </comp>
@@ -497,9 +502,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="6" loc="(496,678)" name="Text">
       <a name="text" val="Instruction"/>
     </comp>
-    <comp lib="0" loc="(540,790)" name="Tunnel">
-      <a name="label" val="PAGE_IN"/>
-    </comp>
     <comp lib="5" loc="(580,150)" name="Hex Digit Display"/>
     <comp lib="0" loc="(90,340)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -515,9 +517,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
     </comp>
-    <comp lib="0" loc="(890,810)" name="Tunnel">
-      <a name="label" val="ACC_IN"/>
-    </comp>
     <comp lib="0" loc="(110,400)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ADDR_IN"/>
@@ -525,11 +524,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(160,380)" name="Tunnel">
       <a name="label" val="ADRB_TO_MAR"/>
     </comp>
-    <comp lib="0" loc="(790,820)" name="Tunnel">
-      <a name="label" val="ARG_IN"/>
+    <comp lib="0" loc="(890,880)" name="Tunnel">
+      <a name="label" val="PAGE_IN"/>
     </comp>
     <comp lib="0" loc="(390,530)" name="Tunnel">
       <a name="label" val="JUMP"/>
+    </comp>
+    <comp lib="0" loc="(890,800)" name="Tunnel">
+      <a name="label" val="B_IN"/>
     </comp>
     <comp lib="0" loc="(640,820)" name="Tunnel">
       <a name="label" val="ADRB_TO_MAR"/>
@@ -539,9 +541,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(620,300)" name="Tunnel">
       <a name="label" val="RESET"/>
-    </comp>
-    <comp lib="0" loc="(890,790)" name="Tunnel">
-      <a name="label" val="B_IN"/>
     </comp>
     <comp lib="6" loc="(172,464)" name="Text">
       <a name="text" val="Arithmetic + Logic Unit"/>
@@ -557,9 +556,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(390,570)" name="Tunnel">
       <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(790,800)" name="Tunnel">
-      <a name="label" val="RAM_IN"/>
     </comp>
     <comp loc="(340,550)" name="pc"/>
     <comp lib="6" loc="(168,138)" name="Text">
@@ -581,6 +577,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(160,90)" name="Tunnel">
       <a name="label" val="HALT"/>
+    </comp>
+    <comp lib="0" loc="(790,810)" name="Tunnel">
+      <a name="label" val="RAM_IN"/>
     </comp>
     <comp loc="(520,270)" name="stack ptr"/>
     <comp loc="(320,370)" name="register">
@@ -608,6 +607,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="6" loc="(489,693)" name="Text">
       <a name="text" val="Register"/>
+    </comp>
+    <comp lib="0" loc="(790,790)" name="Tunnel">
+      <a name="label" val="A_IN"/>
     </comp>
     <comp lib="0" loc="(620,320)" name="Tunnel">
       <a name="label" val="SPTR_IN"/>
@@ -657,6 +659,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="LATCH_ACC"/>
     </comp>
+    <comp lib="0" loc="(740,780)" name="Splitter">
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+      <a name="appear" val="right"/>
+    </comp>
     <comp lib="0" loc="(240,170)" name="Probe">
       <a name="radix" val="10unsigned"/>
       <a name="label" val="Address"/>
@@ -674,9 +681,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(390,650)" name="Tunnel">
       <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(640,800)" name="Tunnel">
-      <a name="label" val="ADDR_IN"/>
     </comp>
     <comp lib="0" loc="(620,360)" name="Tunnel">
       <a name="label" val="SPTR_DECR"/>
@@ -705,6 +709,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit13" val="3"/>
       <a name="bit14" val="3"/>
       <a name="bit15" val="3"/>
+    </comp>
+    <comp lib="0" loc="(890,820)" name="Tunnel">
+      <a name="label" val="ACC_IN"/>
     </comp>
     <comp lib="0" loc="(640,880)" name="Tunnel">
       <a name="label" val="PC_OUT"/>
@@ -759,11 +766,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="SUB"/>
     </comp>
-    <comp lib="0" loc="(740,770)" name="Splitter">
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
-      <a name="appear" val="right"/>
-    </comp>
     <comp lib="0" loc="(390,590)" name="Tunnel">
       <a name="label" val="PC_ADDR_OUT"/>
     </comp>
@@ -772,6 +774,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="5" loc="(620,150)" name="Hex Digit Display"/>
     <comp loc="(350,640)" name="cir"/>
+    <comp lib="0" loc="(790,890)" name="Tunnel">
+      <a name="label" val="ADDR_IN"/>
+    </comp>
     <comp lib="6" loc="(493,535)" name="Text">
       <a name="text" val="Program Counter"/>
     </comp>
@@ -1490,7 +1495,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="8" pin="290,320" width="8" x="46" y="56"/>
       <circ-port height="8" pin="270,380" width="8" x="76" y="56"/>
       <circ-port height="10" pin="480,320" width="10" x="45" y="65"/>
-      <circ-port height="8" pin="380,470" width="8" x="76" y="86"/>
+      <circ-port height="8" pin="360,450" width="8" x="76" y="86"/>
       <circ-port height="8" pin="460,460" width="8" x="76" y="76"/>
       <circ-port height="10" pin="460,260" width="10" x="45" y="75"/>
       <circ-port height="8" pin="380,360" width="8" x="46" y="86"/>
@@ -1508,31 +1513,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,310)" to="(350,310)"/>
     <wire from="(410,170)" to="(460,170)"/>
     <wire from="(480,120)" to="(480,160)"/>
-    <wire from="(290,270)" to="(310,270)"/>
     <wire from="(340,330)" to="(340,380)"/>
-    <wire from="(310,460)" to="(340,460)"/>
-    <wire from="(380,440)" to="(380,470)"/>
     <wire from="(360,340)" to="(360,380)"/>
     <wire from="(390,190)" to="(390,260)"/>
     <wire from="(380,110)" to="(420,110)"/>
-    <wire from="(310,270)" to="(330,270)"/>
     <wire from="(410,180)" to="(450,180)"/>
+    <wire from="(360,410)" to="(360,450)"/>
     <wire from="(470,150)" to="(470,160)"/>
     <wire from="(400,150)" to="(470,150)"/>
     <wire from="(370,360)" to="(380,360)"/>
     <wire from="(290,320)" to="(350,320)"/>
     <wire from="(380,130)" to="(400,130)"/>
+    <wire from="(290,270)" to="(330,270)"/>
     <wire from="(380,320)" to="(390,320)"/>
     <wire from="(390,320)" to="(450,320)"/>
     <wire from="(450,120)" to="(480,120)"/>
     <wire from="(390,260)" to="(390,320)"/>
     <wire from="(400,130)" to="(400,150)"/>
-    <wire from="(310,270)" to="(310,460)"/>
     <wire from="(470,320)" to="(480,320)"/>
     <wire from="(490,180)" to="(510,180)"/>
     <wire from="(460,330)" to="(460,460)"/>
     <wire from="(330,270)" to="(330,310)"/>
-    <wire from="(340,440)" to="(340,460)"/>
     <wire from="(390,260)" to="(460,260)"/>
     <comp lib="0" loc="(460,260)" name="Pin">
       <a name="facing" val="west"/>
@@ -1588,14 +1589,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="D_OUT"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(380,470)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
-    </comp>
     <comp lib="0" loc="(290,270)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="JUMP"/>
+    </comp>
+    <comp lib="0" loc="(360,450)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(380,130)" name="Pin">
       <a name="tristate" val="false"/>
@@ -1607,10 +1608,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="16"/>
       <a name="label" val="A_OUT"/>
       <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(360,380)" name="XOR Gate">
-      <a name="facing" val="north"/>
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(470,320)" name="Controlled Buffer">
       <a name="width" val="16"/>
@@ -1628,6 +1625,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="4" loc="(380,320)" name="Counter">
       <a name="width" val="16"/>
       <a name="max" val="0xffff"/>
+    </comp>
+    <comp lib="1" loc="(360,380)" name="NOT Gate">
+      <a name="facing" val="north"/>
     </comp>
   </circuit>
   <circuit name="cir">
@@ -1893,113 +1893,113 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="addrWidth" val="13"/>
       <a name="dataWidth" val="32"/>
       <a name="contents">addr/data: 13 32
-140010 20000 440010 20000 80000 11*0 140010 20000
-440010 20000 80000 11*0 140010 20000 440010 20000
-80000 11*0 140010 20000 440010 20000 80000 11*0
-140010 20000 440010 20000 200080 8110 10*0 140010
-20000 440010 20000 200080 8110 10*0 140010 20000
-440010 20000 200080 8110 10*0 140010 20000 440010
-20000 200080 8110 10*0 140010 20000 440010 20000
-200080 4120 10*0 140010 20000 440010 20000 200080
-4120 10*0 140010 20000 440010 20000 200080 4120
-10*0 140010 20000 440010 20000 200080 4120 10*0
-140010 20000 440010 20000 804000 11*0 140010 20000
-440010 20000 804000 11*0 140010 20000 440010 20000
-804000 11*0 140010 20000 440010 20000 804000 11*0
-140010 20000 440010 20000 12*0 140010 20000 440010
-20000 12*0 140010 20000 440010 20000 12*0 140010
-20000 440010 20000 12*0 140010 20000 440010 20000
-200080 190 8110 9*0 140010 20000 440010 20000
-200080 190 8110 9*0 140010 20000 440010 20000
-200080 190 8110 9*0 140010 20000 440010 20000
-200080 190 8110 9*0 140010 20000 440010 20000
-9 11*0 140010 20000 440010 20000 9 11*0
-140010 20000 440010 20000 9 11*0 140010 20000
-440010 20000 9 11*0 140010 20000 440010 20000
-8001 11*0 140010 20000 440010 20000 8001 11*0
-140010 20000 440010 20000 8001 11*0 140010 20000
-440010 20000 8001 11*0 140010 20000 440010 20000
-81 8110 10*0 140010 20000 440010 20000 81
-8110 10*0 140010 20000 440010 20000 81 8110
-10*0 140010 20000 440010 20000 81 8110 10*0
-140010 20000 440010 20000 6 11*0 140010 20000
-440010 20000 6 11*0 140010 20000 440010 20000
-6 11*0 140010 20000 440010 20000 6 11*0
-140010 20000 440010 20000 84 8110 10*0 140010
-20000 440010 20000 84 8110 10*0 140010 20000
-440010 20000 84 8110 10*0 140010 20000 440010
-20000 84 8110 10*0 140010 20000 440010 20000
-8004 11*0 140010 20000 440010 20000 8004 11*0
-140010 20000 440010 20000 8004 11*0 140010 20000
-440010 20000 8004 11*0 140010 20000 440010 20000
-200080 190 4120 9*0 140010 20000 440010 20000
-200080 190 4120 9*0 140010 20000 440010 20000
-200080 190 4120 9*0 140010 20000 440010 20000
-200080 190 4120 9*0 140010 20000 440010 20000
-4002 11*0 140010 20000 440010 20000 4002 11*0
-140010 20000 440010 20000 4002 11*0 140010 20000
-440010 20000 4002 11*0 140010 20000 440010 20000
-4008 11*0 140010 20000 440010 20000 4008 11*0
-140010 20000 440010 20000 4008 11*0 140010 20000
-440010 20000 4008 11*0 140010 20000 440010 20000
-81 4120 10*0 140010 20000 440010 20000 81
-4120 10*0 140010 20000 440010 20000 81 4120
-10*0 140010 20000 440010 20000 81 4120 10*0
-140010 20000 440010 20000 201080 2910 10*0 140010
-20000 440010 20000 201080 2910 10*0 140010 20000
-440010 20000 201080 2910 10*0 140010 20000 440010
-20000 201080 2910 10*0 140010 20000 440010 20000
-1000 2801 10*0 140010 20000 440010 20000 1000
-2801 10*0 140010 20000 440010 20000 1000 2801
-10*0 140010 20000 440010 20000 1000 2801 10*0
-140010 20000 440010 20000 1000 2804 10*0 140010
-20000 440010 20000 1000 2804 10*0 140010 20000
-440010 20000 1000 2804 10*0 140010 20000 440010
-20000 1000 2804 10*0 140010 20000 440010 20000
-84 4120 10*0 140010 20000 440010 20000 84
-4120 10*0 140010 20000 440010 20000 84 4120
-10*0 140010 20000 440010 20000 84 4120 10*0
-140010 20000 440010 20000 201080 2d10 10*0 140010
-20000 440010 20000 201080 2d10 10*0 140010 20000
-440010 20000 201080 2d10 10*0 140010 20000 440010
-20000 201080 2d10 10*0 140010 20000 440010 20000
-1000 2c01 10*0 140010 20000 440010 20000 1000
-2c01 10*0 140010 20000 440010 20000 1000 2c01
-10*0 140010 20000 440010 20000 1000 2c01 10*0
-140010 20000 440010 20000 1000 2c04 10*0 140010
-20000 440010 20000 1000 2c04 10*0 140010 20000
-440010 20000 1000 2c04 10*0 140010 20000 440010
-20000 1000 2c04 10*0 140010 20000 440010 20000
-200040 11*0 140010 20000 440010 20000 200040 11*0
-140010 20000 440010 20000 200040 11*0 140010 20000
-440010 20000 200040 11*0 140010 20000 440010 20000
-200080 10100 10*0 140010 20000 440010 20000 200080
-10100 10*0 140010 20000 440010 20000 200080 10100
-10*0 140010 20000 440010 20000 200080 10100 10*0
-140010 20000 440010 20000 12*0 140010 20000 440010
-20000 12*0 140010 20000 440010 20000 200080 10100
-10*0 140010 20000 440010 20000 200080 10100 10*0
-140010 20000 440010 20000 12*0 140010 20000 440010
-20000 200080 10100 10*0 140010 20000 440010 20000
-12*0 140010 20000 440010 20000 200080 10100 10*0
-140010 20000 440010 20000 4000000 8004020 10*0 140010
-20000 440010 20000 4000000 8004020 10*0 140010 20000
-440010 20000 4000000 8004020 10*0 140010 20000 440010
-20000 4000000 8004020 10*0 140010 20000 440010 20000
-8008010 2000000 10*0 140010 20000 440010 20000 8008010
-2000000 10*0 140010 20000 440010 20000 8008010 2000000
-10*0 140010 20000 440010 20000 8008010 2000000 10*0
-140010 20000 440010 20000 4000000 18000020 4000000 28000020
-200080 10100 6*0 140010 20000 440010 20000 4000000
-18000020 4000000 28000020 200080 10100 6*0 140010 20000
-440010 20000 4000000 18000020 4000000 28000020 200080 10100
-6*0 140010 20000 440010 20000 4000000 18000020 4000000
-28000020 200080 10100 6*0 140010 20000 440010 20000
-8000050 2000000 8000090 2000000 10100 7*0 140010 20000
-440010 20000 8000050 2000000 8000090 2000000 10100 7*0
-140010 20000 440010 20000 8000050 2000000 8000090 2000000
-10100 7*0 140010 20000 440010 20000 8000050 2000000
-8000090 2000000 10100
+80165 1000000 80125 1000000 2000000 11*0 80165 1000000
+80125 1000000 2000000 11*0 80165 1000000 80125 1000000
+2000000 11*0 80165 1000000 80125 1000000 2000000 11*0
+80165 1000000 80125 1000000 2a9 10e5 10*0 80165
+1000000 80125 1000000 2a9 10e5 10*0 80165 1000000
+80125 1000000 2a9 10e5 10*0 80165 1000000 80125
+1000000 2a9 10e5 10*0 80165 1000000 80125 1000000
+2a9 10a7 10*0 80165 1000000 80125 1000000 2a9
+10a7 10*0 80165 1000000 80125 1000000 2a9 10a7
+10*0 80165 1000000 80125 1000000 2a9 10a7 10*0
+80165 1000000 80125 1000000 227 11*0 80165 1000000
+80125 1000000 227 11*0 80165 1000000 80125 1000000
+227 11*0 80165 1000000 80125 1000000 227 11*0
+80165 1000000 80125 1000000 12*0 80165 1000000 80125
+1000000 12*0 80165 1000000 80125 1000000 12*0 80165
+1000000 80125 1000000 12*0 80165 1000000 80125 1000000
+2a9 12a5 10e5 9*0 80165 1000000 80125 1000000
+2a9 12a5 10e5 9*0 80165 1000000 80125 1000000
+2a9 12a5 10e5 9*0 80165 1000000 80125 1000000
+2a9 12a5 10e5 9*0 80165 1000000 80125 1000000
+61 11*0 80165 1000000 80125 1000000 61 11*0
+80165 1000000 80125 1000000 61 11*0 80165 1000000
+80125 1000000 61 11*0 80165 1000000 80125 1000000
+e1 11*0 80165 1000000 80125 1000000 e1 11*0
+80165 1000000 80125 1000000 e1 11*0 80165 1000000
+80125 1000000 e1 11*0 80165 1000000 80125 1000000
+2a1 10e5 10*0 80165 1000000 80125 1000000 2a1
+10e5 10*0 80165 1000000 80125 1000000 2a1 10e5
+10*0 80165 1000000 80125 1000000 2a1 10e5 10*0
+80165 1000000 80125 1000000 23 11*0 80165 1000000
+80125 1000000 23 11*0 80165 1000000 80125 1000000
+23 11*0 80165 1000000 80125 1000000 23 11*0
+80165 1000000 80125 1000000 2a3 10e5 10*0 80165
+1000000 80125 1000000 2a3 10e5 10*0 80165 1000000
+80125 1000000 2a3 10e5 10*0 80165 1000000 80125
+1000000 2a3 10e5 10*0 80165 1000000 80125 1000000
+e3 11*0 80165 1000000 80125 1000000 e3 11*0
+80165 1000000 80125 1000000 e3 11*0 80165 1000000
+80125 1000000 e3 11*0 80165 1000000 80125 1000000
+2a9 12a5 10a7 9*0 80165 1000000 80125 1000000
+2a9 12a5 10a7 9*0 80165 1000000 80125 1000000
+2a9 12a5 10a7 9*0 80165 1000000 80125 1000000
+2a9 12a5 10a7 9*0 80165 1000000 80125 1000000
+27 11*0 80165 1000000 80125 1000000 27 11*0
+80165 1000000 80125 1000000 27 11*0 80165 1000000
+80125 1000000 27 11*0 80165 1000000 80125 1000000
+67 11*0 80165 1000000 80125 1000000 67 11*0
+80165 1000000 80125 1000000 67 11*0 80165 1000000
+80125 1000000 67 11*0 80165 1000000 80125 1000000
+2a1 10a7 10*0 80165 1000000 80125 1000000 2a1
+10a7 10*0 80165 1000000 80125 1000000 2a1 10a7
+10*0 80165 1000000 80125 1000000 2a1 10a7 10*0
+80165 1000000 80125 1000000 102a9 29005 10*0 80165
+1000000 80125 1000000 102a9 29005 10*0 80165 1000000
+80125 1000000 102a9 29005 10*0 80165 1000000 80125
+1000000 102a9 29005 10*0 80165 1000000 80125 1000000
+10000 28001 10*0 80165 1000000 80125 1000000 10000
+28001 10*0 80165 1000000 80125 1000000 10000 28001
+10*0 80165 1000000 80125 1000000 10000 28001 10*0
+80165 1000000 80125 1000000 10000 28003 10*0 80165
+1000000 80125 1000000 10000 28003 10*0 80165 1000000
+80125 1000000 10000 28003 10*0 80165 1000000 80125
+1000000 10000 28003 10*0 80165 1000000 80125 1000000
+b 10a7 10*0 80165 1000000 80125 1000000 b
+10a7 10*0 80165 1000000 80125 1000000 b 10a7
+10*0 80165 1000000 80125 1000000 b 10a7 10*0
+80165 1000000 80125 1000000 102a9 2d005 10*0 80165
+1000000 80125 1000000 102a9 2d005 10*0 80165 1000000
+80125 1000000 102a9 2d005 10*0 80165 1000000 80125
+1000000 102a9 2d005 10*0 80165 1000000 80125 1000000
+10000 2c001 10*0 80165 1000000 80125 1000000 10000
+2c001 10*0 80165 1000000 80125 1000000 10000 2c001
+10*0 80165 1000000 80125 1000000 10000 2c001 10*0
+80165 1000000 80125 1000000 10000 2c003 10*0 80165
+1000000 80125 1000000 10000 2c003 10*0 80165 1000000
+80125 1000000 10000 2c003 10*0 80165 1000000 80125
+1000000 10000 2c003 10*0 80165 1000000 80125 1000000
+269 11*0 80165 1000000 80125 1000000 269 11*0
+80165 1000000 80125 1000000 269 11*0 80165 1000000
+80125 1000000 269 11*0 80165 1000000 80125 1000000
+2a9 41000 10*0 80165 1000000 80125 1000000 2a9
+41000 10*0 80165 1000000 80125 1000000 2a9 41000
+10*0 80165 1000000 80125 1000000 2a9 41000 10*0
+80165 1000000 80125 1000000 12*0 80165 1000000 80125
+1000000 12*0 80165 1000000 80125 1000000 2a9 41000
+10*0 80165 1000000 80125 1000000 2a9 41000 10*0
+80165 1000000 80125 1000000 12*0 80165 1000000 80125
+1000000 2a9 41000 10*0 80165 1000000 80125 1000000
+12*0 80165 1000000 80125 1000000 2a9 41000 10*0
+80165 1000000 80125 1000000 800000 2000a7 10*0 80165
+1000000 80125 1000000 800000 2000a7 10*0 80165 1000000
+80125 1000000 800000 2000a7 10*0 80165 1000000 80125
+1000000 800000 2000a7 10*0 80165 1000000 80125 1000000
+2000e5 400000 10*0 80165 1000000 80125 1000000 2000e5
+400000 10*0 80165 1000000 80125 1000000 2000e5 400000
+10*0 80165 1000000 80125 1000000 2000e5 400000 10*0
+80165 1000000 80125 1000000 800000 2000ad 800000 2000af
+2a9 41000 6*0 80165 1000000 80125 1000000 800000
+2000ad 800000 2000af 2a9 41000 6*0 80165 1000000
+80125 1000000 800000 2000ad 800000 2000af 2a9 41000
+6*0 80165 1000000 80125 1000000 800000 2000ad 800000
+2000af 2a9 41000 6*0 80165 1000000 80125 1000000
+200265 400000 2002a5 400000 41000 7*0 80165 1000000
+80125 1000000 200265 400000 2002a5 400000 41000 7*0
+80165 1000000 80125 1000000 200265 400000 2002a5 400000
+41000 7*0 80165 1000000 80125 1000000 200265 400000
+2002a5 400000 41000
 </a>
     </comp>
     <comp lib="0" loc="(550,370)" name="Constant">

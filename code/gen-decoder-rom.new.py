@@ -111,7 +111,7 @@ INSTRUCTIONS = [
     
     # 1: LDA x
     [ transfer(ARG_IO, ADDR_IO),
-      transfer(ACC_IO, RAM_IO) | MAR_TO_ADRB ],
+      transfer(RAM_IO, ACC_IO) | MAR_TO_ADRB ],
     
     # 2: STA x
     [ transfer(ARG_IO, ADDR_IO),
@@ -238,4 +238,43 @@ INSTRUCTIONS = [
       JUMP | MAR_TO_ADRB ],
 ]
 
-print(INSTRUCTIONS)
+def generate_rom():
+    # Initialise the ROM, blank at first.
+    rom = [ 0 for i in range(2 ** 13) ]
+    
+    for (opcode, instr) in enumerate(INSTRUCTIONS):
+        for flags in range(4):
+            if type(instr) == list:
+                put_instr(opcode, instr, flags, rom)
+            elif flags in instr:
+                put_instr(opcode, instr[flags], flags, rom)
+            else:
+                put_instr(opcode, [], flags, rom)
+    
+    return rom
+
+def put_instr(opcode, steps, flags, rom):
+    # Add the fetch steps before the instruction begins
+    steps = FETCH + steps
+        
+    # Pad with empty control words up to a length of 16
+    for i in range(16 - len(steps)):
+        steps.append(0)
+    
+    base_address = opcode << 6
+    
+    for (i, bits) in enumerate(steps):
+        addr = base_address | (i << 0) | (flags << 4)
+        rom[addr] = bits
+
+def output_rom(rom):
+    print("v2.0 raw")
+    
+    for x in rom:
+        print(hex(x)[2:])
+
+def main():
+    output_rom(generate_rom())
+
+if __name__ == "__main__":
+    main()
