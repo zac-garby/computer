@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+LIBS:computer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5D6C540F
+P 5150 3200
+AR Path="/5D6BC7B1/5D6C540F" Ref="#PWR?"  Part="1" 
+AR Path="/5D6BC7B1/5D6C27C3/5D6C540F" Ref="#PWR018"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6C540F" Ref="#PWR024"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6C540F" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 5150 2950 50  0001 C CNN
+F 1 "GND" H 5155 3027 50  0000 C CNN
+F 2 "" H 5150 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D6C5415
+P 5150 1300
+AR Path="/5D6BC7B1/5D6C5415" Ref="#PWR?"  Part="1" 
+AR Path="/5D6BC7B1/5D6C27C3/5D6C5415" Ref="#PWR017"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6C5415" Ref="#PWR023"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6C5415" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 5150 1150 50  0001 C CNN
+F 1 "+5V" H 5165 1473 50  0000 C CNN
+F 2 "" H 5150 1300 50  0001 C CNN
+F 3 "" H 5150 1300 50  0001 C CNN
+	1    5150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS157 U7
+U 1 1 5D6C9F86
+P 5150 2200
+AR Path="/5D6BC7B1/5D6C27C3/5D6C9F86" Ref="U7"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6C9F86" Ref="U9"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6C9F86" Ref="U31"  Part="1" 
+F 0 "U31" H 5200 3050 50  0000 L CNN
+F 1 "74LS157" H 5200 2950 50  0000 L CNN
+F 2 "" H 5150 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 5150 2200 50  0001 C CNN
+	1    5150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5D6CCD2F
+P 4650 2900
+AR Path="/5D6BC7B1/5D6C27C3/5D6CCD2F" Ref="#PWR015"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6CCD2F" Ref="#PWR021"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6CCD2F" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 4650 2650 50  0001 C CNN
+F 1 "GND" H 4655 2727 50  0000 C CNN
+F 2 "" H 4650 2900 50  0001 C CNN
+F 3 "" H 4650 2900 50  0001 C CNN
+	1    4650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6CE15A
+P 5150 5650
+AR Path="/5D6BC7B1/5D6CE15A" Ref="#PWR?"  Part="1" 
+AR Path="/5D6BC7B1/5D6C27C3/5D6CE15A" Ref="#PWR020"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6CE15A" Ref="#PWR026"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6CE15A" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 5150 5400 50  0001 C CNN
+F 1 "GND" H 5155 5477 50  0000 C CNN
+F 2 "" H 5150 5650 50  0001 C CNN
+F 3 "" H 5150 5650 50  0001 C CNN
+	1    5150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D6CE160
+P 5150 3750
+AR Path="/5D6BC7B1/5D6CE160" Ref="#PWR?"  Part="1" 
+AR Path="/5D6BC7B1/5D6C27C3/5D6CE160" Ref="#PWR019"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6CE160" Ref="#PWR025"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6CE160" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 5150 3600 50  0001 C CNN
+F 1 "+5V" H 5165 3923 50  0000 C CNN
+F 2 "" H 5150 3750 50  0001 C CNN
+F 3 "" H 5150 3750 50  0001 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS157 U8
+U 1 1 5D6CE166
+P 5150 4650
+AR Path="/5D6BC7B1/5D6C27C3/5D6CE166" Ref="U8"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6CE166" Ref="U10"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6CE166" Ref="U32"  Part="1" 
+F 0 "U32" H 5200 5500 50  0000 L CNN
+F 1 "74LS157" H 5200 5400 50  0000 L CNN
+F 2 "" H 5150 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 5150 4650 50  0001 C CNN
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5D6CE16C
+P 4650 5350
+AR Path="/5D6BC7B1/5D6C27C3/5D6CE16C" Ref="#PWR016"  Part="1" 
+AR Path="/5D6BC7B1/5D7339BB/5D6CE16C" Ref="#PWR022"  Part="1" 
+AR Path="/5D79F97D/5D7A3213/5D6CE16C" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 4650 5100 50  0001 C CNN
+F 1 "GND" H 4655 5177 50  0000 C CNN
+F 2 "" H 4650 5350 50  0001 C CNN
+F 3 "" H 4650 5350 50  0001 C CNN
+	1    4650 5350
+	1    0    0    -1  
+$EndComp
+Text HLabel 4650 1600 0    50   Input ~ 0
+A0
+Text HLabel 4650 1700 0    50   Input ~ 0
+B0
+Text HLabel 4650 1900 0    50   Input ~ 0
+A1
+Text HLabel 4650 2000 0    50   Input ~ 0
+B1
+Text HLabel 4650 2200 0    50   Input ~ 0
+A2
+Text HLabel 4650 2300 0    50   Input ~ 0
+B2
+Text HLabel 4650 2500 0    50   Input ~ 0
+A3
+Text HLabel 4650 2600 0    50   Input ~ 0
+B3
+Text HLabel 4650 2800 0    50   Input ~ 0
+S
+Text HLabel 4650 4050 0    50   Input ~ 0
+A4
+Text HLabel 4650 4150 0    50   Input ~ 0
+B4
+Text HLabel 4650 4350 0    50   Input ~ 0
+A5
+Text HLabel 4650 4450 0    50   Input ~ 0
+B5
+Text HLabel 4650 4650 0    50   Input ~ 0
+A6
+Text HLabel 4650 4750 0    50   Input ~ 0
+B6
+Text HLabel 4650 4950 0    50   Input ~ 0
+A7
+Text HLabel 4650 5050 0    50   Input ~ 0
+B7
+Text HLabel 4650 5250 0    50   Input ~ 0
+S
+Text HLabel 5650 1600 2    50   Output ~ 0
+O0
+Text HLabel 5650 1900 2    50   Output ~ 0
+O1
+Text HLabel 5650 2200 2    50   Output ~ 0
+O2
+Text HLabel 5650 2500 2    50   Output ~ 0
+O3
+Text HLabel 5650 4050 2    50   Output ~ 0
+O4
+Text HLabel 5650 4350 2    50   Output ~ 0
+O5
+Text HLabel 5650 4650 2    50   Output ~ 0
+O6
+Text HLabel 5650 4950 2    50   Output ~ 0
+O7
+$EndSCHEMATC

@@ -1,0 +1,206 @@
+EESchema Schematic File Version 4
+LIBS:computer-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS02 U38
+U 1 1 5D8C7D81
+P 4700 2050
+F 0 "U38" H 4700 2379 50  0000 C CNN
+F 1 "74LS02" H 4700 2286 50  0000 C CNN
+F 2 "" H 4700 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4700 2050 50  0001 C CNN
+	1    4700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U38
+U 2 1 5D8CB517
+P 4700 2400
+F 0 "U38" H 4700 2729 50  0000 C CNN
+F 1 "74LS02" H 4700 2636 50  0000 C CNN
+F 2 "" H 4700 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4700 2400 50  0001 C CNN
+	2    4700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U38
+U 3 1 5D8CB7CD
+P 4700 2800
+F 0 "U38" H 4700 3129 50  0000 C CNN
+F 1 "74LS02" H 4700 3036 50  0000 C CNN
+F 2 "" H 4700 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4700 2800 50  0001 C CNN
+	3    4700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U38
+U 4 1 5D8CBB06
+P 4700 3150
+F 0 "U38" H 4700 3479 50  0000 C CNN
+F 1 "74LS02" H 4700 3386 50  0000 C CNN
+F 2 "" H 4700 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 4700 3150 50  0001 C CNN
+	4    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS02 U38
+U 5 1 5D8CBF2D
+P 1050 1400
+F 0 "U38" H 1280 1447 50  0000 L CNN
+F 1 "74LS02" H 1280 1354 50  0000 L CNN
+F 2 "" H 1050 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 1050 1400 50  0001 C CNN
+	5    1050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR093
+U 1 1 5D8CE24E
+P 1050 900
+F 0 "#PWR093" H 1050 750 50  0001 C CNN
+F 1 "+5V" H 1065 1075 50  0000 C CNN
+F 2 "" H 1050 900 50  0001 C CNN
+F 3 "" H 1050 900 50  0001 C CNN
+	1    1050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR094
+U 1 1 5D8CE636
+P 1050 1900
+F 0 "#PWR094" H 1050 1650 50  0001 C CNN
+F 1 "GND" H 1055 1725 50  0000 C CNN
+F 2 "" H 1050 1900 50  0001 C CNN
+F 3 "" H 1050 1900 50  0001 C CNN
+	1    1050 1900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4400 1950 0    50   Input ~ 0
+I0
+Text HLabel 4400 2150 0    50   Input ~ 0
+I1
+Text HLabel 4400 2300 0    50   Input ~ 0
+I2
+Text HLabel 4400 2500 0    50   Input ~ 0
+I3
+Text HLabel 4400 2700 0    50   Input ~ 0
+I4
+Text HLabel 4400 2900 0    50   Input ~ 0
+I5
+Text HLabel 4400 3050 0    50   Input ~ 0
+I6
+Text HLabel 4400 3250 0    50   Input ~ 0
+I7
+$Comp
+L 74xx:74LS08 U39
+U 1 1 5D8D2F99
+P 5450 2300
+F 0 "U39" H 5450 2629 50  0000 C CNN
+F 1 "74LS08" H 5450 2536 50  0000 C CNN
+F 2 "" H 5450 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U39
+U 2 1 5D8D6A3E
+P 5450 2900
+F 0 "U39" H 5450 3229 50  0000 C CNN
+F 1 "74LS08" H 5450 3136 50  0000 C CNN
+F 2 "" H 5450 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5450 2900 50  0001 C CNN
+	2    5450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U39
+U 3 1 5D8D8C9C
+P 6250 2600
+F 0 "U39" H 6250 2929 50  0000 C CNN
+F 1 "74LS08" H 6250 2836 50  0000 C CNN
+F 2 "" H 6250 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6250 2600 50  0001 C CNN
+	3    6250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2400 5150 2400
+Wire Wire Line
+	5000 2800 5150 2800
+Wire Wire Line
+	5150 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 3150
+Wire Wire Line
+	5100 3150 5000 3150
+Wire Wire Line
+	5000 2050 5100 2050
+Wire Wire Line
+	5100 2050 5100 2200
+Wire Wire Line
+	5100 2200 5150 2200
+Wire Wire Line
+	5750 2300 5850 2300
+Wire Wire Line
+	5850 2300 5850 2500
+Wire Wire Line
+	5850 2500 5950 2500
+Wire Wire Line
+	5750 2900 5850 2900
+Wire Wire Line
+	5850 2900 5850 2700
+Wire Wire Line
+	5850 2700 5950 2700
+Text HLabel 6550 2600 2    50   Output ~ 0
+ZERO
+$Comp
+L 74xx:74LS08 U39
+U 5 1 5D8E5BB9
+P 1800 1400
+F 0 "U39" H 2030 1447 50  0000 L CNN
+F 1 "74LS08" H 2030 1354 50  0000 L CNN
+F 2 "" H 1800 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 1800 1400 50  0001 C CNN
+	5    1800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR095
+U 1 1 5D8E80B0
+P 1800 900
+F 0 "#PWR095" H 1800 750 50  0001 C CNN
+F 1 "+5V" H 1815 1075 50  0000 C CNN
+F 2 "" H 1800 900 50  0001 C CNN
+F 3 "" H 1800 900 50  0001 C CNN
+	1    1800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR096
+U 1 1 5D8E86B6
+P 1800 1900
+F 0 "#PWR096" H 1800 1650 50  0001 C CNN
+F 1 "GND" H 1805 1725 50  0000 C CNN
+F 2 "" H 1800 1900 50  0001 C CNN
+F 3 "" H 1800 1900 50  0001 C CNN
+	1    1800 1900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
